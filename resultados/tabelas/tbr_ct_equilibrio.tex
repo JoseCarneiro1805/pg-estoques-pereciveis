@@ -1,0 +1,29 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Custo de transbordo de equilíbrio por prazo do fornecedor e do transbordo ($\theta$ = 0,10)}
+\label{tab:tbr_ct_equilibrio}
+\begin{tabular}{llrrrr}
+\toprule
+Razão (nível) & Prazo do fornecedor & Newsvendor, L\_t = 1 & Ótimo, L\_t = 1 & Newsvendor, L\_t = 2 & Ótimo, L\_t = 2 \\
+\midrule
+1:4 (80\%) & L\_f = 0 & -0,679 & -0,010 & -0,656 & -0,100 \\
+ & L\_f = 1 & 0,021 & 0,090 & -0,539 & -0,046 \\
+ & L\_f = 2 & 0,153 & 0,126 & -0,216 & 0,019 \\
+ & L\_f = 3 & 0,207 & 0,160 & -0,120 & 0,049 \\
+\addlinespace
+1:9 (90\%) & L\_f = 0 & -0,690 & -0,031 & -0,681 & -0,119 \\
+ & L\_f = 1 & 0,106 & 0,098 & -0,628 & -0,047 \\
+ & L\_f = 2 & 0,273 & 0,141 & -0,233 & 0,017 \\
+ & L\_f = 3 & 0,376 & 0,188 & -0,103 & 0,054 \\
+\addlinespace
+1:19 (95\%) & L\_f = 0 & -0,676 & -0,114 & -0,688 & -0,192 \\
+ & L\_f = 1 & 0,211 & 0,157 & -0,685 & -0,138 \\
+ & L\_f = 2 & 0,434 & 0,240 & -0,224 & -0,013 \\
+ & L\_f = 3 & 0,568 & 0,329 & -0,082 & 0,056 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Prazo do fornecedor $L_f$: pedido do fim do dia t chega em t+1+$L_f$; alvo de $L_f$+1 dias (versão incondicional). $c_t$ de equilíbrio = ganho de custo com $c_t$ = 0 ÷ volume enviado, em unidades de $c_h$, no nível do newsvendor ou no nível ótimo sem transbordo do mesmo $L_f$. Positivo: o transbordo compensa até esse custo unitário. Custo por série-dia = perda (loja + trânsito) + $c_r$ × faltas + $c_t$ × volume, $c_h$ = 1.}
+\end{table}

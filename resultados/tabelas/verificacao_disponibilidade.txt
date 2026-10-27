@@ -1,0 +1,80 @@
+======================================================================
+VERIFICACAO EMPIRICA — AUSENCIA DE PRECO = PRODUTO INDISPONIVEL
+Recorte: FOODS, lojas CA_1 a CA_4, 1.913 dias (d_1 a d_1913)
+======================================================================
+
+----------------------------------------------------------------------
+VERIFICACAO 1 — Vendas positivas em dias SEM registro de preco
+----------------------------------------------------------------------
+Linhas totais (serie x dia) ........:   10,995,924
+Linhas sem registro de preco .......:    2,572,521  (23.40%)
+Linhas com venda > 0 ...............:    4,357,358
+Venda > 0 E sem preco ..............:            0  (0.0000% das linhas)
+Unidades vendidas em dias sem preco :            0
+
+Resultado: APROVADA (limite de tolerancia: 0.5% das linhas)
+
+----------------------------------------------------------------------
+VERIFICACAO 2 — Os dias sem preco formam bloco continuo no inicio?
+----------------------------------------------------------------------
+Total de series: 5,748
+
+Classificacao (mutuamente exclusiva):
+  Preco em todos os dias (sem lacuna)             :  2,292  (39.87%)
+  Sem preco APENAS num bloco continuo no inicio   :  3,456  (60.13%)
+  Padrao diferente (ver detalhe abaixo)           :      0  ( 0.00%)
+  Nunca tem preco                                 :      0  ( 0.00%)
+
+Detalhe do 'padrao diferente' (pode haver sobreposicao):
+  Preco interrompido no meio da serie             :      0  ( 0.00%)
+  Preco some no final da serie (descontinuado?)   :      0  ( 0.00%)
+
+----------------------------------------------------------------------
+VERIFICACAO 3 — Data do primeiro registro de preco
+----------------------------------------------------------------------
+Primeiro dia da base: 2011-01-29
+Series com preco desde o primeiro dia: 2,292 (39.87%)
+Series que entram depois ..............: 3,456 (60.13%)
+
+Series que entram depois, por ano do primeiro preco:
+  ano     series  % do total   disponiveis ao fim do ano
+  2011       883      15.36%                       3,175
+  2012       704      12.25%                       3,879
+  2013       779      13.55%                       4,658
+  2014       676      11.76%                       5,334
+  2015       409       7.12%                       5,743
+  2016         5       0.09%                       5,748
+
+----------------------------------------------------------------------
+VERIFICACAO 4 — Dias entre o primeiro preco e a primeira venda > 0
+----------------------------------------------------------------------
+Series que nunca registraram venda: 0
+Series analisadas ................: 5,748
+Diferenca negativa (venda antes do preco): 0
+
+Todas as series (n = 5,748)
+  diferenca zero ....:  2,282 (39.70%)
+  ate 6 dias ........:  5,731 (99.70%)   <- dentro da mesma semana de preco
+  mediana ...........:      1 dias
+  media .............:    2.9 dias
+  percentis 75/90/99 : 4 / 6 / 6 dias
+  maximo ............:  1,578 dias
+
+Apenas series lancadas DEPOIS do inicio da base (n = 3,456)
+  diferenca zero ....:    519 (15.02%)
+  ate 6 dias ........:  3,440 (99.54%)   <- dentro da mesma semana de preco
+  mediana ...........:      3 dias
+  media .............:    4.1 dias
+  percentis 75/90/99 : 5 / 6 / 6 dias
+  maximo ............:    731 dias
+
+Apenas series com preco desde o dia 1 (n = 2,292)
+  diferenca zero ....:  1,763 (76.92%)
+  ate 6 dias ........:  2,291 (99.96%)   <- dentro da mesma semana de preco
+  mediana ...........:      0 dias
+  media .............:    1.2 dias
+  percentis 75/90/99 : 0 / 2 / 6 dias
+  maximo ............:  1,578 dias
+
+Figura salva em: resultados\figuras\disponibilidade_series_tempo.png
+  disponiveis no primeiro dia: 2,292 | no ultimo dia: 5,748

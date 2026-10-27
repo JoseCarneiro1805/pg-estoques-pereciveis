@@ -1,0 +1,47 @@
+# =============================================================================
+# .gitignore — o que NAO deve ir para o GitHub
+# =============================================================================
+# O GitHub tem limite de 100 MB por arquivo. Os dados do M5 sao grandes demais
+# e, alem disso, sao publicos: qualquer pessoa baixa do Kaggle. Por isso o
+# repositorio guarda o CODIGO, nao os dados.
+# =============================================================================
+
+# --- Dados brutos do M5 (baixar do Kaggle, nao versionar) ---
+dados/*.csv
+dados/*.xlsx
+dados/*.xls
+dados/*.zip
+
+# --- Arquivos gerados pelo codigo (base analitica e previsoes; centenas de MB) ---
+*.parquet
+*.npz
+*.pkl
+*.joblib
+
+# --- Anotacoes de trabalho do assistente de codigo (nao fazem parte do trabalho) ---
+CLAUDE.md
+.claude/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# --- Ambientes virtuais ---
+venv/
+.venv/
+env/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Editores ---
+.vscode/
+.idea/
+*.swp
+
+# --- Sistema operacional ---
+.DS_Store
+Thumbs.db
+desktop.ini

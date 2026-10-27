@@ -1,0 +1,33 @@
+# =============================================================================
+# Bibliotecas necessarias
+# =============================================================================
+# Para instalar tudo de uma vez, no terminal, dentro da pasta do projeto:
+#
+#     pip install -r requirements.txt
+#
+# Lista conferida contra o que os scripts realmente importam. Testado com
+# Python 3.12; as versoes exatas usadas estao no README.
+# =============================================================================
+
+# --- Manipulacao de dados ---
+pandas>=3.0
+numpy>=2.0
+pyarrow>=14.0          # leitura e gravacao dos arquivos .parquet
+
+# --- Estatistica (teste de Spearman/Kendall na sazonalidade anual) ---
+scipy>=1.11
+
+# --- Graficos ---
+matplotlib>=3.7
+
+# --- Holt-Winters ---
+statsmodels>=0.14
+
+# --- XGBoost ---
+xgboost>=2.0
+
+# --- Barra de progresso ---
+tqdm>=4.66
+
+# --- Sistema de apoio a decisao (sad.py) ---
+streamlit>=1.30

@@ -1,0 +1,19 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Viés da aproximação do horizonte: ($L_f$ + 1) × previsão de 1 dia contra a demanda acumulada}
+\label{tab:tbr_vies_aproximacao}
+\begin{tabular}{lrr}
+\toprule
+Prazo do fornecedor & Períodos & Viés médio \\
+\midrule
+L\_f = 0 & 517.280 & -0,6\% \\
+L\_f = 1 & 511.532 & -0,8\% \\
+L\_f = 2 & 505.784 & -1,0\% \\
+L\_f = 3 & 500.036 & -1,1\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Períodos de $L_f$ + 1 dias no teste com todos os dias válidos. Viés: soma das previsões escalonadas menos a soma da demanda, sobre a soma da demanda (positivo = superestima).}
+\end{table}

@@ -1,0 +1,18 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Comparação dos modelos — calibração}
+\label{tab:comp_calibracao}
+\begin{tabular}{lrrrrrr}
+\toprule
+Modelo & Quantil 80\% & Quantil 90\% & Quantil 95\% & Decisão 80\% & Decisão 90\% & Decisão 95\% \\
+\midrule
+Holt-Winters & 79,6\% & 88,7\% & 93,8\% & 85,5\% & 92,2\% & 95,8\% \\
+XGBoost & 79,2\% & 88,6\% & 93,8\% & 85,3\% & 92,2\% & 95,8\% \\
+Combinação & 79,5\% & 88,8\% & 93,9\% & 85,5\% & 92,3\% & 95,8\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos, estoque = quantil arredondado para o inteiro mais próximo. Quantil: \% dos dias com demanda até o quantil previsto (avalia o modelo). Decisão: \% dos dias sem falta (avalia o estoque). O ideal é igual ao nível de serviço.}
+\end{table}

@@ -1,0 +1,28 @@
+% Gerado por scripts/etapa4_heterogeneidade.py — requer \usepackage{booktabs} e \usepackage{graphicx}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Nível ótimo único para a rede × níveis diferenciados por departamento}
+\label{tab:het_nivel_unico}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\toprule
+Cenário & Razão (nível) & $\theta$ médio & Previsto com $\theta$ médio & Ótimo único & Custo, nível único & Custo, níveis por departamento & Perda do nível único \\
+\midrule
+H1 & 1:4 (80\%) & 0,129 & 96,9\% & 97\% & 0,718 & 0,708 & +1,4\% \\
+ & 1:9 (90\%) & 0,129 & 98,6\% & 99\%* & 0,908 & 0,908 & +0,0\% \\
+ & 1:19 (95\%) & 0,129 & 99,3\% & 99\%* & 1,199 & 1,199 & +0,0\% \\
+\addlinespace
+H2 & 1:4 (80\%) & 0,071 & 98,3\% & 98\% & 0,522 & 0,502 & +3,9\% \\
+ & 1:9 (90\%) & 0,071 & 99,2\% & 99\%* & 0,669 & 0,669 & -0,0\% \\
+ & 1:19 (95\%) & 0,071 & 99,6\% & 99\%* & 0,958 & 0,958 & -0,0\% \\
+\addlinespace
+H3 & 1:4 (80\%) & 0,077 & 98,1\% & 98\% & 0,557 & 0,530 & +5,1\% \\
+ & 1:9 (90\%) & 0,077 & 99,1\% & 99\%* & 0,712 & 0,705 & +1,1\% \\
+ & 1:19 (95\%) & 0,077 & 99,6\% & 99\%* & 1,001 & 1,001 & -0,0\% \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries, sem transbordo, reposição diária até o quantil empírico arredondado para o inteiro mais próximo; $\theta$ diferente por departamento. Custo por série-dia = perda por validade + $c_r$ × faltas, $c_h$ = 1. Combinação. Ótimo único: um só nível para todas as séries. Níveis por departamento: cada departamento no seu ótimo. Perda: custo do nível único em relação ao diferenciado. Previsto com $\theta$ médio: fórmula com o $\theta$ ponderado pela demanda.}
+\end{table}

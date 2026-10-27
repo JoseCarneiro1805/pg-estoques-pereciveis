@@ -1,0 +1,25 @@
+% Gerado por scripts/etapa3_xgboost.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{XGBoost — quantis normais versus empíricos, por padrão de demanda e por loja}
+\label{tab:xgb_empirico_vs_normal_por_grupo}
+\begin{tabular}{llrrrrrr}
+\toprule
+Recorte & Grupo & Séries & Dif. Custo 1:4 & Dif. Custo 1:9 & Dif. Custo 1:19 & Cob. quantil 95\% emp. & Cob. quantil 95\% norm. \\
+\midrule
+Padrão de demanda & Suave & 549 & +0,1\% & -0,4\% & +0,4\% & 94,4\% & 93,5\% \\
+ & Errática & 288 & +5,4\% & +2,6\% & +0,4\% & 94,8\% & 94,0\% \\
+ & Intermitente & 3.347 & +1,0\% & -1,7\% & +0,2\% & 93,7\% & 92,3\% \\
+ & Irregular & 1.561 & +2,3\% & -0,6\% & +0,5\% & 93,5\% & 92,5\% \\
+ & Sem venda no treino & 3 & -2,0\% & -3,9\% & -11,6\% & 95,2\% & 92,6\% \\
+\addlinespace
+Loja & CA\_1 & 1.437 & +2,1\% & -1,0\% & +0,4\% & 93,8\% & 92,6\% \\
+ & CA\_2 & 1.437 & +0,7\% & -1,0\% & +0,7\% & 93,6\% & 92,2\% \\
+ & CA\_3 & 1.437 & +2,1\% & +0,2\% & +0,2\% & 94,0\% & 92,9\% \\
+ & CA\_4 & 1.437 & +2,1\% & -1,2\% & +0,2\% & 93,7\% & 92,4\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries. Classes de Syntetos-Boylan calculadas no treino. Dif.: custo normal em relação ao empírico (positivo = normal mais caro). Cob. quantil 95\%: \% dos dias com demanda até o quantil de 95\% (ideal: 95\%). custo por série-dia com custo de sobra = 1; razão 1:4, 1:9 e 1:19 (sobra:falta) corresponde aos níveis de serviço de 80\%, 90\% e 95\%. Estoque = quantil arredondado para o inteiro mais próximo.}
+\end{table}

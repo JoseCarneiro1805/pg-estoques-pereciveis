@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa4_simulacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Custo da operação por modelo e taxa de perecibilidade}
+\label{tab:sim_custo}
+\begin{tabular}{llrrrr}
+\toprule
+Razão (nível) & Modelo & $\theta$ = 0,05 & $\theta$ = 0,10 & $\theta$ = 0,15 & $\theta$ = 0,20 \\
+\midrule
+1:4 (80\%) & Holt-Winters & 1,332 & 1,411 & 1,487 & 1,560 \\
+ & XGBoost & 1,354 & 1,434 & 1,509 & 1,581 \\
+ & Combinação & 1,337 & 1,415 & 1,489 & 1,561 \\
+\addlinespace
+1:9 (90\%) & Holt-Winters & 1,659 & 1,785 & 1,906 & 2,022 \\
+ & XGBoost & 1,667 & 1,795 & 1,916 & 2,032 \\
+ & Combinação & 1,655 & 1,779 & 1,898 & 2,013 \\
+\addlinespace
+1:19 (95\%) & Holt-Winters & 1,963 & 2,141 & 2,309 & 2,472 \\
+ & XGBoost & 1,968 & 2,147 & 2,316 & 2,479 \\
+ & Combinação & 1,954 & 2,129 & 2,295 & 2,455 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries; reposição diária até o quantil empírico do nível de serviço, arredondado para o inteiro mais próximo; prazo zero; venda perdida. Nível de serviço do newsvendor. custo por série-dia = unidades perdidas por validade + $c_r$ × unidades em falta, com $c_r$ = 4, 9 e 19.}
+\end{table}

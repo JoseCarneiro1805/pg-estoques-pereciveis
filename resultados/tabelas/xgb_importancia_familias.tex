@@ -1,0 +1,23 @@
+% Gerado por scripts/etapa3_xgboost.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{XGBoost — importância por família de variáveis}
+\label{tab:xgb_importancia_familias}
+\begin{tabular}{lrr}
+\toprule
+Família & Variáveis & Participação no ganho \\
+\midrule
+Médias móveis e histórico & 8 & 56,5 \\
+Defasagens de venda & 7 & 37,8 \\
+Identificadores & 3 & 2,3 \\
+Calendário & 4 & 1,8 \\
+Preço & 4 & 1,1 \\
+Eventos & 4 & 0,4 \\
+SNAP & 1 & 0,0 \\
+Reforma CA\_2 e fechamento & 2 & 0,0 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: participação de cada variável no ganho total das árvores (redução do erro de treino), em \%, média dos 13 modelos reestimados no teste.}
+\end{table}

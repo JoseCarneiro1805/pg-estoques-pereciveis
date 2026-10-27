@@ -1,0 +1,22 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Comparação dos modelos — 90 dias versus últimos 28}
+\label{tab:comp_verificacao_28d}
+\begin{tabular}{llrrrrr}
+\toprule
+Período & Modelo & MAE & RMSE & Custo 1:4 & Custo 1:9 & Custo 1:19 \\
+\midrule
+90 dias & Holt-Winters & 1,262 & 2,351 & 2,644 & 3,791 & 4,983 \\
+ & XGBoost & 1,246 & 2,281 & 2,630 & 3,782 & 4,983 \\
+ & Combinação & 1,245 & 2,287 & 2,620 & 3,768 & 4,958 \\
+\addlinespace
+Últimos 28 dias & Holt-Winters & 1,275 & 2,324 & 2,656 & 3,798 & 4,954 \\
+ & XGBoost & 1,257 & 2,236 & 2,638 & 3,789 & 4,953 \\
+ & Combinação & 1,257 & 2,250 & 2,631 & 3,777 & 4,933 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos, estoque = quantil arredondado para o inteiro mais próximo. Últimos 28 dias: 28/03 a 24/04/2016.}
+\end{table}

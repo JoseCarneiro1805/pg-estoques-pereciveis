@@ -1,0 +1,30 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Perda por validade para o mesmo atendimento, por prazo do fornecedor ($\theta$ = 0,10)}
+\label{tab:tbr_fronteira}
+\begin{tabular}{llrrr}
+\toprule
+Prazo do fornecedor & Cenário & Atendimento 90\% & Atendimento 95\% & Atendimento 98\% \\
+\midrule
+L\_f = 0 & Sem transbordo & 9,9\% & 13,6\% & 19,0\% \\
+ & Transbordo, L\_t = 1 & 9,8\% & 13,6\% & 19,0\% \\
+ & Transbordo, L\_t = 2 & 10,0\% & 13,8\% & 19,1\% \\
+\addlinespace
+L\_f = 1 & Sem transbordo & 13,7\% & 18,1\% & 24,5\% \\
+ & Transbordo, L\_t = 1 & 13,4\% & 17,8\% & 24,2\% \\
+ & Transbordo, L\_t = 2 & 13,8\% & 18,2\% & 24,6\% \\
+\addlinespace
+L\_f = 2 & Sem transbordo & 17,1\% & 21,8\% & 28,7\% \\
+ & Transbordo, L\_t = 1 & 16,5\% & 21,2\% & 28,2\% \\
+ & Transbordo, L\_t = 2 & 17,0\% & 21,7\% & -- \\
+\addlinespace
+L\_f = 3 & Sem transbordo & 20,0\% & 24,9\% & -- \\
+ & Transbordo, L\_t = 1 & 19,0\% & 23,9\% & -- \\
+ & Transbordo, L\_t = 2 & 19,7\% & 24,6\% & -- \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Prazo do fornecedor $L_f$: pedido do fim do dia t chega em t+1+$L_f$; alvo de $L_f$+1 dias (versão incondicional). Perda (\% do recebido do fornecedor) interpolada no atendimento indicado, ao longo da varredura de níveis.}
+\end{table}

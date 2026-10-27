@@ -1,0 +1,25 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs} e \usepackage{graphicx}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Serviço na loja de origem no dia seguinte ao envio ($\theta$ = 0,10)}
+\label{tab:tb_servico_origem}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+Razão (nível) & Prazo & Loja-dias de origem & Faltas na origem, com & Faltas na origem, sem & Atendimento na origem, com & Atendimento na origem, sem & Faltas na rede, com & Faltas na rede, sem & Cobertura do alvo na origem & Cobertura do alvo na rede \\
+\midrule
+1:4 (80\%) & L = 2 & 6,4\% & 0,346 & 0,256 & 71,0\% & 78,6\% & 0,327 & 0,320 & 84,6\% & 85,5\% \\
+ & L = 1 & 5,4\% & 0,374 & 0,261 & 70,9\% & 79,7\% & 0,329 & 0,320 & 84,1\% & 85,5\% \\
+\addlinespace
+1:9 (90\%) & L = 2 & 6,1\% & 0,197 & 0,151 & 83,6\% & 87,4\% & 0,177 & 0,173 & 91,8\% & 92,3\% \\
+ & L = 1 & 5,2\% & 0,214 & 0,158 & 83,6\% & 87,9\% & 0,177 & 0,173 & 91,5\% & 92,3\% \\
+\addlinespace
+1:19 (95\%) & L = 2 & 5,7\% & 0,110 & 0,087 & 91,0\% & 92,9\% & 0,097 & 0,096 & 95,5\% & 95,8\% \\
+ & L = 1 & 5,0\% & 0,119 & 0,091 & 91,0\% & 93,1\% & 0,097 & 0,096 & 95,3\% & 95,8\% \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Nível do newsvendor; $\theta$ = 0,10. Loja-dias de origem: \% dos loja-dias que vêm logo após um envio. Faltas em unidades por loja-dia; "sem": as mesmas loja-dias na simulação sem transbordo. Faltas na rede: média de todas as séries-dia. Cobertura do alvo: \% dos loja-dias em que a demanda coube no alvo do dia (se a loja tivesse exatamente o alvo); na origem, só os loja-dias logo após um envio.}
+\end{table}

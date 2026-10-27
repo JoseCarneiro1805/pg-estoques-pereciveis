@@ -1,0 +1,34 @@
+﻿Variável,Família,Participação no ganho
+media_7d,Médias móveis e histórico,27.733974627323743
+venda_lag_1,Defasagens de venda,27.03215614703102
+media_28d,Médias móveis e histórico,21.24553874700785
+media_mesmo_dia_4s,Médias móveis e histórico,5.20661180205105
+venda_lag_7,Defasagens de venda,3.423776039689436
+venda_lag_364,Defasagens de venda,2.614300922486034
+item,Identificadores,2.1802600855892815
+venda_lag_2,Defasagens de venda,2.020707490471462
+dia_semana,Calendário,1.2713392234694196
+venda_lag_14,Defasagens de venda,1.255343419742977
+venda_lag_3,Defasagens de venda,0.7804403308641559
+venda_lag_28,Defasagens de venda,0.7004894627762306
+preco_rel_historico,Preço,0.592508007074559
+desvio_28d,Médias móveis e histórico,0.5759501585285132
+zeros_28d,Médias móveis e histórico,0.4887230536708263
+dias_desde_venda,Médias móveis e histórico,0.48579850737385566
+media_91d,Médias móveis e histórico,0.4298041552294322
+nome_evento,Eventos,0.3640491816090688
+idade_serie,Médias móveis e histórico,0.32653892221369984
+dia_mes,Calendário,0.29875555191564457
+preco,Preço,0.24200665903486435
+semana_ano,Calendário,0.17784976751093806
+preco_rel_departamento,Preço,0.16806012580225194
+loja,Identificadores,0.13577334534831673
+preco_var_semana,Preço,0.074164443841803
+mes,Calendário,0.06001748217515303
+snap,SNAP,0.04596373208227417
+evento_amanha,Eventos,0.03477513508807631
+loja_fechada,Reforma CA_2 e fechamento,0.025193086330707826
+tipo_evento,Eventos,0.004341059125042347
+pos_reforma_ca2,Reforma CA_2 e fechamento,0.0024571191331468033
+departamento,Identificadores,0.001637217576031285
+tem_evento,Eventos,0.0006949908331318952

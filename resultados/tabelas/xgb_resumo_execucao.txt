@@ -1,0 +1,15 @@
+Execucao: 26/10/2026 12:02 | duracao: 32.4 min
+Objetivo: reg:squarederror | arvores: 90 | janela de treino: 1092 dias | parametros: {'eta': 0.1, 'max_depth': 8, 'min_child_weight': 20, 'subsample': 0.7, 'colsample_bytree': 0.7, 'reg_lambda': 1.0, 'max_bin': 256, 'tree_method': 'hist', 'max_cat_to_onehot': 1, 'nthread': 16, 'seed': 0}
+Origens: 26 de calibracao (d_1642 a d_1823) + 13 de teste, a cada 7 dias
+Dias-serie previstos no teste: 517,280 | series: 5,748
+Previsao media no teste: 1.981 | demanda media: 1.994
+
+Importancia por familia (% do ganho):
+  Médias móveis e histórico     56.5%
+  Defasagens de venda           37.8%
+  Identificadores                2.3%
+  Calendário                     1.8%
+  Preço                          1.1%
+  Eventos                        0.4%
+  SNAP                           0.0%
+  Reforma CA_2 e fechamento      0.0%

@@ -1,0 +1,17 @@
+% Gerado por scripts/etapa3_holt_winters.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Holt-Winters — calibração dos quantis}
+\label{tab:hw_calibracao}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Quantis & Quantil 80\% & Quantil 90\% & Quantil 95\% & Decisão 80\% & Decisão 90\% & Decisão 95\% & Atend. 80\% & Atend. 90\% & Atend. 95\% \\
+\midrule
+Empírico & 79,6\% & 88,7\% & 93,8\% & 85,5\% & 92,2\% & 95,8\% & 83,5\% & 91,1\% & 95,1\% \\
+Normal & 83,1\% & 89,1\% & 92,4\% & 88,8\% & 92,9\% & 95,1\% & 87,2\% & 91,9\% & 94,4\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries. Quantil: \% dos dias com demanda até o quantil previsto, antes de arredondar (avalia o modelo). Decisão: \% dos dias sem falta, com o estoque formado pelo quantil arredondado para o inteiro mais próximo (avalia a decisão). O ideal é igual ao nível de serviço. Atend.: \% da demanda total atendida.}
+\end{table}

@@ -1,0 +1,27 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs} e \usepackage{graphicx}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Verificação obrigatória: cobertura da linha de base com prazo do fornecedor, sem transbordo ($\theta$ = 0,10)}
+\label{tab:tbr_cobertura_base}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\toprule
+Prazo do fornecedor & Versão do alvo & Cobertura 80\% & Cobertura 90\% & Cobertura 95\% & Atendimento 80\% & Atendimento 90\% & Atendimento 95\% \\
+\midrule
+L\_f = 0 & Etapa 4 (prazo zero) & 85,5\% & 92,3\% & 95,8\% & 83,9\% & 91,3\% & 95,2\% \\
+\addlinespace
+L\_f = 1 & Incondicional & 82,1\% & 89,4\% & 93,7\% & 85,1\% & 91,5\% & 95,1\% \\
+ & Por dia da semana de partida & 82,2\% & 89,0\% & 92,8\% & 85,0\% & 91,0\% & 94,1\% \\
+\addlinespace
+L\_f = 2 & Incondicional & 84,9\% & 90,9\% & 94,4\% & 84,8\% & 91,1\% & 94,7\% \\
+ & Por dia da semana de partida & 84,9\% & 90,4\% & 93,5\% & 85,4\% & 90,9\% & 93,9\% \\
+\addlinespace
+L\_f = 3 & Incondicional & 86,0\% & 91,2\% & 94,4\% & 84,5\% & 90,5\% & 94,2\% \\
+ & Por dia da semana de partida & 86,0\% & 90,8\% & 93,7\% & 85,4\% & 90,6\% & 93,5\% \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Cobertura: \% dos loja-dias sem falta. Referência: prazo zero (Etapa 4). Versão incondicional: margem pelo quantil de todos os erros acumulados da janela; por dia da semana: só os períodos que começam no mesmo dia da semana (cerca de 25 por janela).}
+\end{table}

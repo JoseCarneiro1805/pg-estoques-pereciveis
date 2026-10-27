@@ -1,0 +1,20 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Combinação HW + XGBoost — teste completo versus últimos 28 dias}
+\label{tab:comb_verificacao_28d}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Período & Quantis & MAE & RMSE & Custo 1:4 & Custo 1:9 & Custo 1:19 & Cobertura 80\% & Cobertura 90\% & Cobertura 95\% \\
+\midrule
+90 dias & Empírico & 1,245 & 2,287 & 2,620 & 3,768 & 4,958 & 85,5\% & 92,3\% & 95,8\% \\
+ & Normal & 1,245 & 2,287 & 2,668 & 3,744 & 4,981 & 88,9\% & 92,9\% & 95,1\% \\
+\addlinespace
+Últimos 28 dias & Empírico & 1,257 & 2,250 & 2,631 & 3,777 & 4,933 & 85,0\% & 91,9\% & 95,7\% \\
+ & Normal & 1,257 & 2,250 & 2,676 & 3,741 & 4,956 & 88,6\% & 92,7\% & 94,9\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: 90 dias: 26/01 a 24/04/2016; últimos 28 dias: 28/03 a 24/04/2016 (convenção da competição M5), subconjunto do teste completo. custo por série-dia com custo de sobra = 1; razão 1:4, 1:9 e 1:19 (sobra:falta) corresponde aos níveis de serviço de 80\%, 90\% e 95\%. Estoque = quantil arredondado para o inteiro mais próximo.}
+\end{table}

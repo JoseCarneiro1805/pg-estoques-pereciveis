@@ -1,0 +1,32 @@
+% Gerado por scripts/etapa4_mecanismo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Assimetria da decisão de estoque (período único)}
+\label{tab:mec_decisao}
+\begin{tabular}{llrrrrrr}
+\toprule
+Nível & Modelo & Alvo médio & Folga do alvo & \% dias com sobra & Sobra média & \% dias com falta & Falta média \\
+\midrule
+80\% & Holt-Winters & 2,997 & 1,014 & 60,2\% & 1,332 & 14,5\% & 0,328 \\
+\addlinespace
+90\% & Holt-Winters & 4,002 & 2,019 & 78,5\% & 2,187 & 7,8\% & 0,178 \\
+\addlinespace
+95\% & Holt-Winters & 5,008 & 3,025 & 87,8\% & 3,112 & 4,2\% & 0,098 \\
+\addlinespace
+80\% & XGBoost & 2,937 & 0,956 & 59,5\% & 1,281 & 14,7\% & 0,337 \\
+\addlinespace
+90\% & XGBoost & 3,972 & 1,990 & 78,2\% & 2,158 & 7,8\% & 0,180 \\
+\addlinespace
+95\% & XGBoost & 4,994 & 3,012 & 87,6\% & 3,099 & 4,2\% & 0,099 \\
+\addlinespace
+80\% & Combinação & 2,965 & 0,983 & 59,9\% & 1,301 & 14,5\% & 0,330 \\
+\addlinespace
+90\% & Combinação & 3,986 & 2,004 & 78,5\% & 2,170 & 7,7\% & 0,178 \\
+\addlinespace
+95\% & Combinação & 5,000 & 3,018 & 87,8\% & 3,104 & 4,2\% & 0,098 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos, estoque = quantil arredondado para o inteiro mais próximo. Alvo: estoque-alvo do dia. Folga: alvo $-$ previsão pontual (a margem de segurança). Sobra e falta em unidades por série-dia, sem carregar estoque de um dia para o outro (como na Etapa 3).}
+\end{table}

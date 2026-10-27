@@ -1,0 +1,3 @@
+Execucao: 26/10/2026 10:41 | duracao: 0.4 min
+Itens: 1,437 | lojas: 4 | series: 5,748 | dias-serie: 517,280
+Cenarios: Sem transbordo, Transbordo, L = 2, Transbordo, L = 1 x 30 niveis x 4 thetas; c_t: (0.0, 0.05, 0.1, 0.2, 0.5)

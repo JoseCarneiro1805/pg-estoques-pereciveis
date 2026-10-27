@@ -1,0 +1,18 @@
+% Gerado por scripts/etapa4_heterogeneidade.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Cenários de $\theta$ heterogêneo por departamento}
+\label{tab:het_cenarios}
+\begin{tabular}{lrrrr}
+\toprule
+Cenário & $\theta$ FOODS\_1 & $\theta$ FOODS\_2 & $\theta$ FOODS\_3 & $\theta$ médio ponderado \\
+\midrule
+H1 & 0,050 & 0,100 & 0,150 & 0,129 \\
+H2 & 0,150 & 0,100 & 0,050 & 0,071 \\
+H3 & 0,200 & 0,100 & 0,050 & 0,077 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries, sem transbordo, reposição diária até o quantil empírico arredondado para o inteiro mais próximo; $\theta$ diferente por departamento. Custo por série-dia = perda por validade + $c_r$ × faltas, $c_h$ = 1. $\theta$ médio ponderado pela participação de cada departamento na demanda do período de teste.}
+\end{table}

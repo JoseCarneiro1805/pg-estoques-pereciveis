@@ -1,0 +1,6 @@
+Execucao: 26/10/2026 11:30 | duracao: 6.2 min | processos: 15
+Series: 5,748 | dias-serie previstos: 517,280 | avaliados (loja aberta): 517,280
+Origens de reestimacao: 13 (a cada 7 dias) | janela de erros: 180 dias
+Ajustes que falharam (substituidos pela media historica): 0
+Dias-serie com media historica (pouco historico ou falha): 135 em 5 series
+Parametros estimados (74,699 ajustes): alfa mediano 0.059 (p10-p90 0.016-0.198) | gama mediano 0.000 (p10-p90 0.000-0.016)

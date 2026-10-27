@@ -1,0 +1,44 @@
+% Gerado por scripts/etapa4_heterogeneidade.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Diferenças de custo entre modelos com $\theta$ heterogêneo, com IC de 95\%}
+\label{tab:het_diferencas}
+\begin{tabular}{lllrr}
+\toprule
+Cenário & Razão (nível) & Comparação & Newsvendor & Nível ótimo \\
+\midrule
+H1 & 1:4 (80\%) & XGBoost vs Holt-Winters & +1,4 [+0,8; +2,0] & -0,3 [-0,6; +0,1] \\
+ & 1:4 (80\%) & Combinação vs Holt-Winters & +0,2 [-0,1; +0,5] & -0,5 [-0,7; -0,3] \\
+ & 1:4 (80\%) & Combinação vs XGBoost & -1,2 [-1,6; -0,8] & -0,3 [-0,5; -0,0] \\
+ & 1:9 (90\%) & XGBoost vs Holt-Winters & +0,4 [-0,1; +1,0] & -0,2 [-0,6; +0,2] \\
+ & 1:9 (90\%) & Combinação vs Holt-Winters & -0,4 [-0,7; -0,1] & -0,4 [-0,7; -0,2] \\
+ & 1:9 (90\%) & Combinação vs XGBoost & -0,8 [-1,2; -0,5] & -0,2 [-0,4; -0,0] \\
+ & 1:19 (95\%) & XGBoost vs Holt-Winters & +0,2 [-0,5; +0,9] & -0,3 [-0,9; +0,2] \\
+ & 1:19 (95\%) & Combinação vs Holt-Winters & -0,6 [-1,0; -0,3] & -0,6 [-1,0; -0,3] \\
+ & 1:19 (95\%) & Combinação vs XGBoost & -0,8 [-1,2; -0,4] & -0,3 [-0,6; +0,0] \\
+\addlinespace
+H2 & 1:4 (80\%) & XGBoost vs Holt-Winters & +1,7 [+1,0; +2,4] & -0,1 [-0,5; +0,3] \\
+ & 1:4 (80\%) & Combinação vs Holt-Winters & +0,4 [+0,1; +0,7] & -0,5 [-0,7; -0,3] \\
+ & 1:4 (80\%) & Combinação vs XGBoost & -1,3 [-1,7; -0,9] & -0,4 [-0,6; -0,2] \\
+ & 1:9 (90\%) & XGBoost vs Holt-Winters & +0,6 [-0,0; +1,2] & -0,1 [-0,5; +0,4] \\
+ & 1:9 (90\%) & Combinação vs Holt-Winters & -0,3 [-0,6; +0,0] & -0,4 [-0,6; -0,1] \\
+ & 1:9 (90\%) & Combinação vs XGBoost & -0,9 [-1,2; -0,5] & -0,3 [-0,6; -0,0] \\
+ & 1:19 (95\%) & XGBoost vs Holt-Winters & +0,4 [-0,3; +1,1] & -0,2 [-0,9; +0,4] \\
+ & 1:19 (95\%) & Combinação vs Holt-Winters & -0,5 [-0,8; -0,1] & -0,5 [-0,9; -0,1] \\
+ & 1:19 (95\%) & Combinação vs XGBoost & -0,8 [-1,3; -0,4] & -0,3 [-0,7; +0,1] \\
+\addlinespace
+H3 & 1:4 (80\%) & XGBoost vs Holt-Winters & +1,7 [+1,0; +2,4] & -0,1 [-0,4; +0,3] \\
+ & 1:4 (80\%) & Combinação vs Holt-Winters & +0,4 [+0,1; +0,7] & -0,4 [-0,6; -0,2] \\
+ & 1:4 (80\%) & Combinação vs XGBoost & -1,3 [-1,7; -0,9] & -0,4 [-0,6; -0,2] \\
+ & 1:9 (90\%) & XGBoost vs Holt-Winters & +0,6 [+0,0; +1,2] & -0,0 [-0,5; +0,4] \\
+ & 1:9 (90\%) & Combinação vs Holt-Winters & -0,3 [-0,6; +0,0] & -0,3 [-0,6; -0,0] \\
+ & 1:9 (90\%) & Combinação vs XGBoost & -0,9 [-1,2; -0,5] & -0,3 [-0,6; -0,1] \\
+ & 1:19 (95\%) & XGBoost vs Holt-Winters & +0,4 [-0,3; +1,1] & -0,2 [-0,8; +0,5] \\
+ & 1:19 (95\%) & Combinação vs Holt-Winters & -0,5 [-0,8; -0,1] & -0,5 [-0,9; -0,1] \\
+ & 1:19 (95\%) & Combinação vs XGBoost & -0,9 [-1,3; -0,4] & -0,3 [-0,7; +0,1] \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries, sem transbordo, reposição diária até o quantil empírico arredondado para o inteiro mais próximo; $\theta$ diferente por departamento. Custo por série-dia = perda por validade + $c_r$ × faltas, $c_h$ = 1. Diferença \% do primeiro modelo em relação ao segundo (negativo = primeiro mais barato), intervalo de 95\% entre colchetes, item como unidade. Nível ótimo: cada modelo no seu.}
+\end{table}

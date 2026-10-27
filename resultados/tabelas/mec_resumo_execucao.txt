@@ -1,0 +1,2 @@
+Execucao: 24/10/2026 10:09 | duracao: 0.2 min
+Series: 5,748 | dias-serie avaliados por modelo: 517,280

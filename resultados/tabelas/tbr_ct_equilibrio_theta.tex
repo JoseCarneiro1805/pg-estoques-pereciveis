@@ -1,0 +1,41 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Confirmação nos demais $\theta$: $c_t$ de equilíbrio no nível ótimo sem transbordo}
+\label{tab:tbr_ct_equilibrio_theta}
+\begin{tabular}{lllrrrr}
+\toprule
+Razão (nível) & Prazo do fornecedor & Prazo do transbordo & $\theta$ = 0,05 & $\theta$ = 0,10 & $\theta$ = 0,15 & $\theta$ = 0,20 \\
+\midrule
+1:4 (80\%) & L\_f = 0 & L\_t = 1 & -0,013 & -0,010 & -0,007 & -0,010 \\
+ & L\_f = 0 & L\_t = 2 & -0,061 & -0,100 & -0,135 & -0,171 \\
+ & L\_f = 1 & L\_t = 1 & 0,052 & 0,090 & 0,118 & 0,149 \\
+ & L\_f = 1 & L\_t = 2 & -0,015 & -0,046 & -0,050 & -0,050 \\
+ & L\_f = 2 & L\_t = 1 & 0,078 & 0,126 & 0,165 & 0,186 \\
+ & L\_f = 2 & L\_t = 2 & 0,002 & 0,019 & 0,027 & 0,039 \\
+ & L\_f = 3 & L\_t = 1 & 0,086 & 0,160 & 0,207 & 0,270 \\
+ & L\_f = 3 & L\_t = 2 & 0,013 & 0,049 & 0,082 & 0,115 \\
+\addlinespace
+1:9 (90\%) & L\_f = 0 & L\_t = 1 & -0,091 & -0,031 & -0,013 & -0,025 \\
+ & L\_f = 0 & L\_t = 2 & -0,123 & -0,119 & -0,140 & -0,183 \\
+ & L\_f = 1 & L\_t = 1 & 0,059 & 0,098 & 0,113 & 0,161 \\
+ & L\_f = 1 & L\_t = 2 & -0,090 & -0,047 & -0,031 & -0,050 \\
+ & L\_f = 2 & L\_t = 1 & 0,093 & 0,141 & 0,163 & 0,245 \\
+ & L\_f = 2 & L\_t = 2 & -0,022 & 0,017 & 0,029 & 0,050 \\
+ & L\_f = 3 & L\_t = 1 & 0,108 & 0,188 & 0,246 & 0,293 \\
+ & L\_f = 3 & L\_t = 2 & -0,012 & 0,054 & 0,099 & 0,132 \\
+\addlinespace
+1:19 (95\%) & L\_f = 0 & L\_t = 1 & -0,247 & -0,114 & -0,061 & -0,036 \\
+ & L\_f = 0 & L\_t = 2 & -0,248 & -0,192 & -0,184 & -0,194 \\
+ & L\_f = 1 & L\_t = 1 & 0,074 & 0,157 & 0,199 & 0,220 \\
+ & L\_f = 1 & L\_t = 2 & -0,241 & -0,138 & -0,086 & -0,057 \\
+ & L\_f = 2 & L\_t = 1 & 0,143 & 0,240 & 0,291 & 0,328 \\
+ & L\_f = 2 & L\_t = 2 & -0,099 & -0,013 & 0,027 & 0,055 \\
+ & L\_f = 3 & L\_t = 1 & 0,170 & 0,329 & 0,451 & 0,551 \\
+ & L\_f = 3 & L\_t = 2 & -0,079 & 0,056 & 0,159 & 0,238 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Prazo do fornecedor $L_f$: pedido do fim do dia t chega em t+1+$L_f$; alvo de $L_f$+1 dias (versão incondicional). Unidades de $c_h$. Custo por série-dia = perda (loja + trânsito) + $c_r$ × faltas + $c_t$ × volume, $c_h$ = 1.}
+\end{table}

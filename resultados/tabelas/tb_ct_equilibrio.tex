@@ -1,0 +1,28 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Custo de transbordo de equilíbrio ($c_t$ acima do qual o transbordo não compensa)}
+\label{tab:tb_ct_equilibrio}
+\begin{tabular}{lllrrrr}
+\toprule
+Referência & Razão (nível) & Prazo & $\theta$ = 0,05 & $\theta$ = 0,10 & $\theta$ = 0,15 & $\theta$ = 0,20 \\
+\midrule
+Nível do newsvendor & 1:4 (80\%) & L = 2 & -0,779 & -0,656 & -0,553 & -0,468 \\
+ & 1:4 (80\%) & L = 1 & -0,951 & -0,679 & -0,481 & -0,335 \\
+ & 1:9 (90\%) & L = 2 & -0,877 & -0,681 & -0,530 & -0,427 \\
+ & 1:9 (90\%) & L = 1 & -1,062 & -0,690 & -0,443 & -0,283 \\
+ & 1:19 (95\%) & L = 2 & -0,968 & -0,688 & -0,505 & -0,399 \\
+ & 1:19 (95\%) & L = 1 & -1,133 & -0,676 & -0,408 & -0,254 \\
+\addlinespace
+Nível ótimo sem transbordo & 1:4 (80\%) & L = 2 & -0,061 & -0,100 & -0,135 & -0,171 \\
+ & 1:4 (80\%) & L = 1 & -0,013 & -0,010 & -0,007 & -0,010 \\
+ & 1:9 (90\%) & L = 2 & -0,123 & -0,119 & -0,140 & -0,183 \\
+ & 1:9 (90\%) & L = 1 & -0,091 & -0,031 & -0,013 & -0,025 \\
+ & 1:19 (95\%) & L = 2 & -0,248 & -0,192 & -0,184 & -0,194 \\
+ & 1:19 (95\%) & L = 1 & -0,247 & -0,114 & -0,061 & -0,036 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. $c_t$ de equilíbrio = (custo sem transbordo $-$ custo com transbordo e $c_t$ = 0) ÷ volume enviado, por série-dia, em unidades de $c_h$, no mesmo nível de serviço. Negativo: o transbordo não compensa nem com transporte gratuito.}
+\end{table}

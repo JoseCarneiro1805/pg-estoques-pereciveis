@@ -1,0 +1,17 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Combinação HW + XGBoost — métricas de acurácia e de custo}
+\label{tab:comb_metricas}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Quantis & MAE & RMSE & Pinball 80\% & Pinball 90\% & Pinball 95\% & Custo 1:4 & Custo 1:9 & Custo 1:19 \\
+\midrule
+Empírico & 1,245 & 2,287 & 0,530 & 0,380 & 0,249 & 2,620 & 3,768 & 4,958 \\
+Normal & 1,245 & 2,287 & 0,539 & 0,378 & 0,252 & 2,668 & 3,744 & 4,981 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries. MAE e RMSE avaliam a previsão pontual e são iguais nos dois métodos de quantis. Pinball avalia o quantil previsto; o custo avalia a decisão de estoque. custo por série-dia com custo de sobra = 1; razão 1:4, 1:9 e 1:19 (sobra:falta) corresponde aos níveis de serviço de 80\%, 90\% e 95\%. Estoque = quantil arredondado para o inteiro mais próximo.}
+\end{table}

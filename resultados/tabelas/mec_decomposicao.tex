@@ -1,0 +1,23 @@
+% Gerado por scripts/etapa4_mecanismo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{De onde vem a diferença de custo entre os modelos}
+\label{tab:mec_decomposicao}
+\begin{tabular}{llrrrrrr}
+\toprule
+Razão (nível) & Comparação & E3: sobra & E3: falta × c\_r & E3: custo & E4: perda & E4: falta × c\_r & E4: custo \\
+\midrule
+1:4 (80\%) & XGBoost $-$ Holt-Winters & -0,051 & 0,036 & -0,014 & -0,007 & 0,029 & 0,022 \\
+ & Combinação $-$ Holt-Winters & -0,030 & 0,006 & -0,024 & -0,005 & 0,008 & 0,004 \\
+\addlinespace
+1:9 (90\%) & XGBoost $-$ Holt-Winters & -0,029 & 0,019 & -0,009 & -0,004 & 0,014 & 0,010 \\
+ & Combinação $-$ Holt-Winters & -0,017 & -0,007 & -0,024 & -0,003 & -0,003 & -0,006 \\
+\addlinespace
+1:19 (95\%) & XGBoost $-$ Holt-Winters & -0,013 & 0,013 & 0,000 & -0,003 & 0,009 & 0,006 \\
+ & Combinação $-$ Holt-Winters & -0,009 & -0,016 & -0,025 & -0,002 & -0,010 & -0,012 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos, estoque = quantil arredondado para o inteiro mais próximo. Diferenças em unidades de custo por série-dia (negativo = primeiro modelo mais barato). E3: período único (Etapa 3), custo = sobra + $c_r$ × falta. E4: simulação com perecibilidade $\theta$ = 0,10 (Etapa 4), custo = perda por validade + $c_r$ × falta. A soma das duas parcelas é a diferença de custo.}
+\end{table}

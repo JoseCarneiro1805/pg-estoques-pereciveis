@@ -1,0 +1,18 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Combinação HW + XGBoost — quantis empíricos versus normais}
+\label{tab:comb_empirico_vs_normal}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Nível (razão) & Custo empírico & Custo normal & Diferença [IC 95\%] & Sobra empírico & Sobra normal & Falta empírico & Falta normal \\
+\midrule
+80\% (1:4) & 2,620 & 2,668 & +1,8 [+1,3; +2,3] & 1,301 & 1,659 & 0,330 & 0,252 \\
+90\% (1:9) & 3,768 & 3,744 & -0,6 [-1,0; -0,2] & 2,170 & 2,306 & 0,178 & 0,160 \\
+95\% (1:19) & 4,958 & 4,981 & +0,5 [+0,1; +0,8] & 3,104 & 2,870 & 0,098 & 0,111 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries. Diferença: custo normal em relação ao empírico, em \% (positivo = normal mais caro), com intervalo de 95\% de confiança entre colchetes, item como unidade (1.437 itens). Sobra e falta em unidades por série-dia. custo por série-dia com custo de sobra = 1; razão 1:4, 1:9 e 1:19 (sobra:falta) corresponde aos níveis de serviço de 80\%, 90\% e 95\%. Estoque = quantil arredondado para o inteiro mais próximo.}
+\end{table}

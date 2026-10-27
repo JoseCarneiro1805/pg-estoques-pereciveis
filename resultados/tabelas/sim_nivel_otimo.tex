@@ -1,0 +1,29 @@
+% Gerado por scripts/etapa4_simulacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Nível de serviço que minimiza o custo}
+\label{tab:sim_nivel_otimo}
+\begin{tabular}{llrrrrr}
+\toprule
+Razão (nível) & Modelo & Newsvendor & $\theta$ = 0,05 & $\theta$ = 0,10 & $\theta$ = 0,15 & $\theta$ = 0,20 \\
+\midrule
+1:4 (80\%) & Holt-Winters & 80\% & 99\%* & 98\% & 97\% & 96\% \\
+ & XGBoost & 80\% & 99\%* & 98\% & 97\% & 96\% \\
+ & Combinação & 80\% & 99\%* & 98\% & 97\% & 96\% \\
+ & Aproximação marginal & 80\% & 98,8\% & 97,6\% & 96,4\% & 95,2\% \\
+\addlinespace
+1:9 (90\%) & Holt-Winters & 90\% & 99\%* & 99\%* & 99\%* & 98\% \\
+ & XGBoost & 90\% & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Combinação & 90\% & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Aproximação marginal & 90\% & 99,4\% & 98,9\% & 98,4\% & 97,8\% \\
+\addlinespace
+1:19 (95\%) & Holt-Winters & 95\% & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & XGBoost & 95\% & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Combinação & 95\% & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Aproximação marginal & 95\% & 99,7\% & 99,5\% & 99,2\% & 99,0\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries; reposição diária até o quantil empírico do nível de serviço, arredondado para o inteiro mais próximo; prazo zero; venda perdida. Varredura de 70\% a 99\%, passo de 1 ponto. * = no limite da varredura (o ótimo pode estar acima de 99\%). Aproximação marginal: $c_r / (c_r + \theta c_h)$, supondo que a sobra só perde a fração $\theta$. }
+\end{table}

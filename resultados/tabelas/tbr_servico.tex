@@ -1,0 +1,41 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Atendimento na origem (dia seguinte ao envio) e na rede, por prazo do fornecedor ($\theta$ = 0,10)}
+\label{tab:tbr_servico}
+\begin{tabular}{lllrrrr}
+\toprule
+Razão (nível) & Prazo do fornecedor & Prazo do transbordo & Atendimento na origem, com & Atendimento na origem, sem & Atendimento na rede, com & Atendimento na rede, sem \\
+\midrule
+1:4 (80\%) & L\_f = 0 & L\_t = 1 & 70,9\% & 79,7\% & 83,5\% & 83,9\% \\
+ & L\_f = 0 & L\_t = 2 & 71,0\% & 78,6\% & 83,6\% & 83,9\% \\
+ & L\_f = 1 & L\_t = 1 & 90,4\% & 94,4\% & 85,0\% & 85,1\% \\
+ & L\_f = 1 & L\_t = 2 & 90,5\% & 94,3\% & 84,4\% & 85,1\% \\
+ & L\_f = 2 & L\_t = 1 & 90,4\% & 94,3\% & 85,0\% & 84,8\% \\
+ & L\_f = 2 & L\_t = 2 & 90,9\% & 94,5\% & 84,3\% & 84,8\% \\
+ & L\_f = 3 & L\_t = 1 & 90,0\% & 93,9\% & 84,8\% & 84,5\% \\
+ & L\_f = 3 & L\_t = 2 & 90,2\% & 94,0\% & 84,0\% & 84,5\% \\
+\addlinespace
+1:9 (90\%) & L\_f = 0 & L\_t = 1 & 83,6\% & 87,9\% & 91,1\% & 91,3\% \\
+ & L\_f = 0 & L\_t = 2 & 83,6\% & 87,4\% & 91,1\% & 91,3\% \\
+ & L\_f = 1 & L\_t = 1 & 95,0\% & 97,0\% & 91,5\% & 91,5\% \\
+ & L\_f = 1 & L\_t = 2 & 95,1\% & 96,9\% & 91,1\% & 91,5\% \\
+ & L\_f = 2 & L\_t = 1 & 94,5\% & 96,6\% & 91,2\% & 91,1\% \\
+ & L\_f = 2 & L\_t = 2 & 94,7\% & 96,8\% & 90,8\% & 91,1\% \\
+ & L\_f = 3 & L\_t = 1 & 94,0\% & 96,4\% & 90,9\% & 90,5\% \\
+ & L\_f = 3 & L\_t = 2 & 94,1\% & 96,5\% & 90,4\% & 90,5\% \\
+\addlinespace
+1:19 (95\%) & L\_f = 0 & L\_t = 1 & 91,0\% & 93,1\% & 95,1\% & 95,2\% \\
+ & L\_f = 0 & L\_t = 2 & 91,0\% & 92,9\% & 95,1\% & 95,2\% \\
+ & L\_f = 1 & L\_t = 1 & 97,5\% & 98,5\% & 95,1\% & 95,1\% \\
+ & L\_f = 1 & L\_t = 2 & 97,5\% & 98,5\% & 94,9\% & 95,1\% \\
+ & L\_f = 2 & L\_t = 1 & 96,9\% & 98,1\% & 94,8\% & 94,7\% \\
+ & L\_f = 2 & L\_t = 2 & 97,1\% & 98,2\% & 94,5\% & 94,7\% \\
+ & L\_f = 3 & L\_t = 1 & 96,2\% & 97,8\% & 94,4\% & 94,2\% \\
+ & L\_f = 3 & L\_t = 2 & 96,3\% & 97,8\% & 94,1\% & 94,2\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Prazo do fornecedor $L_f$: pedido do fim do dia t chega em t+1+$L_f$; alvo de $L_f$+1 dias (versão incondicional). Nível do newsvendor; "sem": mesmas loja-dias sem transbordo.}
+\end{table}

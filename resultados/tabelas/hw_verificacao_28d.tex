@@ -1,0 +1,20 @@
+% Gerado por scripts/etapa3_holt_winters.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Holt-Winters — teste completo versus últimos 28 dias}
+\label{tab:hw_verificacao_28d}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Período & Quantis & MAE & RMSE & Custo 1:4 & Custo 1:9 & Custo 1:19 & Cobertura 80\% & Cobertura 90\% & Cobertura 95\% \\
+\midrule
+90 dias & Empírico & 1,262 & 2,351 & 2,644 & 3,791 & 4,983 & 85,5\% & 92,2\% & 95,8\% \\
+ & Normal & 1,262 & 2,351 & 2,690 & 3,766 & 5,009 & 88,8\% & 92,9\% & 95,1\% \\
+\addlinespace
+Últimos 28 dias & Empírico & 1,275 & 2,324 & 2,656 & 3,798 & 4,954 & 85,0\% & 91,9\% & 95,6\% \\
+ & Normal & 1,275 & 2,324 & 2,698 & 3,761 & 4,994 & 88,4\% & 92,7\% & 94,9\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: 90 dias: 26/01 a 24/04/2016; últimos 28 dias: 28/03 a 24/04/2016 (convenção da competição M5), subconjunto do teste completo. custo por série-dia com custo de sobra = 1; razão 1:4, 1:9 e 1:19 (sobra:falta) corresponde aos níveis de serviço de 80\%, 90\% e 95\%. Estoque = quantil arredondado para o inteiro mais próximo.}
+\end{table}

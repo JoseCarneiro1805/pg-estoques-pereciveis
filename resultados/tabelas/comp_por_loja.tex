@@ -1,0 +1,30 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Comparação dos modelos — por loja}
+\label{tab:comp_por_loja}
+\begin{tabular}{llrrrr}
+\toprule
+Loja & Modelo & MAE & Custo 1:4 & Custo 1:9 & Custo 1:19 \\
+\midrule
+CA\_1 & Holt-Winters & 1,281 & 2,678 & 3,845 & 5,024 \\
+ & XGBoost & 1,260 & 2,663 & 3,854 & 5,045 \\
+ & Combinação & 1,260 & 2,651 & 3,830 & 5,002 \\
+\addlinespace
+CA\_2 & Holt-Winters & 1,290 & 2,728 & 3,920 & 5,163 \\
+ & XGBoost & 1,269 & 2,719 & 3,903 & 5,149 \\
+ & Combinação & 1,272 & 2,707 & 3,891 & 5,136 \\
+\addlinespace
+CA\_3 & Holt-Winters & 1,560 & 3,224 & 4,562 & 6,010 \\
+ & XGBoost & 1,529 & 3,194 & 4,544 & 6,015 \\
+ & Combinação & 1,530 & 3,184 & 4,527 & 5,980 \\
+\addlinespace
+CA\_4 & Holt-Winters & 0,918 & 1,948 & 2,838 & 3,735 \\
+ & XGBoost & 0,926 & 1,944 & 2,827 & 3,723 \\
+ & Combinação & 0,918 & 1,940 & 2,822 & 3,715 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos, estoque = quantil arredondado para o inteiro mais próximo. Combinação: média simples dos quantis (e das previsões pontuais) do Holt-Winters e do XGBoost.}
+\end{table}

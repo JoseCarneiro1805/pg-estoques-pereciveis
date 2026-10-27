@@ -1,0 +1,18 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Ordem dos modelos em cada critério (1 = melhor)}
+\label{tab:comp_ordem}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Modelo & MAE & RMSE & Pinball 80\% & Pinball 90\% & Pinball 95\% & Custo 1:4 & Custo 1:9 & Custo 1:19 \\
+\midrule
+Holt-Winters & 3 & 3 & 3 & 3 & 2 & 3 & 3 & 2 \\
+XGBoost & 2 & 1 & 2 & 2 & 3 & 2 & 2 & 3 \\
+Combinação & 1 & 2 & 1 & 1 & 1 & 1 & 1 & 1 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos, estoque = quantil arredondado para o inteiro mais próximo. Posição de cada modelo em cada critério, a partir da tabela de métricas. Se a ordem nas colunas de acurácia (MAE, RMSE) difere da ordem nas colunas de custo, o critério muda a escolha do modelo.}
+\end{table}

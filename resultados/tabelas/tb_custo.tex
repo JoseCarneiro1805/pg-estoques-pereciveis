@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Custo com e sem transbordo (nível do newsvendor, $c_t$ = 0)}
+\label{tab:tb_custo}
+\begin{tabular}{llrrrr}
+\toprule
+Razão (nível) & Cenário & $\theta$ = 0,05 & $\theta$ = 0,10 & $\theta$ = 0,15 & $\theta$ = 0,20 \\
+\midrule
+1:4 (80\%) & Sem transbordo & 1,337 & 1,415 & 1,489 & 1,561 \\
+ & Transbordo, L = 2 & 1,374 & 1,445 & 1,514 & 1,582 \\
+ & Transbordo, L = 1 & 1,378 & 1,445 & 1,510 & 1,576 \\
+\addlinespace
+1:9 (90\%) & Sem transbordo & 1,655 & 1,779 & 1,898 & 2,013 \\
+ & Transbordo, L = 2 & 1,695 & 1,811 & 1,923 & 2,033 \\
+ & Transbordo, L = 1 & 1,701 & 1,810 & 1,919 & 2,026 \\
+\addlinespace
+1:19 (95\%) & Sem transbordo & 1,954 & 2,129 & 2,295 & 2,455 \\
+ & Transbordo, L = 2 & 2,000 & 2,161 & 2,318 & 2,474 \\
+ & Transbordo, L = 1 & 2,005 & 2,160 & 2,314 & 2,468 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Custo por série-dia = perda (em loja e em trânsito) + $c_r$ × faltas + $c_t$ × volume enviado, com $c_h$ = 1.}
+\end{table}

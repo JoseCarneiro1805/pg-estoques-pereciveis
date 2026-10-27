@@ -1,0 +1,44 @@
+% Gerado por scripts/etapa4_heterogeneidade.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Ordem dos modelos de previsão com $\theta$ heterogêneo}
+\label{tab:het_ordem_modelos}
+\begin{tabular}{lllrrrrr}
+\toprule
+Cenário & Razão (nível) & Modelo & Custo, newsvendor & Ordem, newsvendor & Nível ótimo & Custo, ótimo & Ordem, ótimo \\
+\midrule
+H1 & 1:4 (80\%) & Holt-Winters & 1,447 & 1 & 97\% & 0,722 & 3 \\
+ & 1:4 (80\%) & XGBoost & 1,467 & 3 & 97\% & 0,720 & 2 \\
+ & 1:4 (80\%) & Combinação & 1,449 & 2 & 97\% & 0,718 & 1 \\
+ & 1:9 (90\%) & Holt-Winters & 1,840 & 2 & 99\%* & 0,912 & 3 \\
+ & 1:9 (90\%) & XGBoost & 1,849 & 3 & 99\%* & 0,910 & 2 \\
+ & 1:9 (90\%) & Combinação & 1,833 & 1 & 99\%* & 0,908 & 1 \\
+ & 1:19 (95\%) & Holt-Winters & 2,217 & 2 & 99\%* & 1,207 & 3 \\
+ & 1:19 (95\%) & XGBoost & 2,222 & 3 & 99\%* & 1,203 & 2 \\
+ & 1:19 (95\%) & Combinação & 2,203 & 1 & 99\%* & 1,199 & 1 \\
+\addlinespace
+H2 & 1:4 (80\%) & Holt-Winters & 1,373 & 1 & 98\% & 0,524 & 3 \\
+ & 1:4 (80\%) & XGBoost & 1,397 & 3 & 98\% & 0,524 & 2 \\
+ & 1:4 (80\%) & Combinação & 1,379 & 2 & 98\% & 0,522 & 1 \\
+ & 1:9 (90\%) & Holt-Winters & 1,726 & 2 & 99\%* & 0,671 & 3 \\
+ & 1:9 (90\%) & XGBoost & 1,736 & 3 & 99\%* & 0,671 & 2 \\
+ & 1:9 (90\%) & Combinação & 1,721 & 1 & 99\%* & 0,669 & 1 \\
+ & 1:19 (95\%) & Holt-Winters & 2,057 & 2 & 99\%* & 0,963 & 3 \\
+ & 1:19 (95\%) & XGBoost & 2,065 & 3 & 99\%* & 0,961 & 2 \\
+ & 1:19 (95\%) & Combinação & 2,047 & 1 & 99\%* & 0,958 & 1 \\
+\addlinespace
+H3 & 1:4 (80\%) & Holt-Winters & 1,384 & 1 & 98\% & 0,559 & 3 \\
+ & 1:4 (80\%) & XGBoost & 1,408 & 3 & 98\% & 0,559 & 2 \\
+ & 1:4 (80\%) & Combinação & 1,389 & 2 & 98\% & 0,557 & 1 \\
+ & 1:9 (90\%) & Holt-Winters & 1,744 & 2 & 99\%* & 0,715 & 3 \\
+ & 1:9 (90\%) & XGBoost & 1,754 & 3 & 99\%* & 0,714 & 2 \\
+ & 1:9 (90\%) & Combinação & 1,739 & 1 & 99\%* & 0,712 & 1 \\
+ & 1:19 (95\%) & Holt-Winters & 2,082 & 2 & 99\%* & 1,006 & 3 \\
+ & 1:19 (95\%) & XGBoost & 2,090 & 3 & 99\%* & 1,004 & 2 \\
+ & 1:19 (95\%) & Combinação & 2,073 & 1 & 99\%* & 1,001 & 1 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries, sem transbordo, reposição diária até o quantil empírico arredondado para o inteiro mais próximo; $\theta$ diferente por departamento. Custo por série-dia = perda por validade + $c_r$ × faltas, $c_h$ = 1. Ordem: 1 = menor custo, pela estimativa pontual. Ótimo: nível único de cada modelo na varredura de 70\% a 99\%.}
+\end{table}

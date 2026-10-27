@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Composição do quantil: previsão pontual e margem de incerteza}
+\label{tab:comp_composicao_quantil}
+\begin{tabular}{llrrrrr}
+\toprule
+Nível & Modelo & Previsão média & Margem média & Quantil médio & Previsão / quantil & Margem / quantil \\
+\midrule
+80\% & Holt-Winters & 1,974 & 1,040 & 3,014 & 65,5\% & 34,5\% \\
+ & XGBoost & 1,981 & 0,973 & 2,955 & 67,1\% & 32,9\% \\
+ & Combinação & 1,982 & 1,002 & 2,985 & 66,4\% & 33,6\% \\
+\addlinespace
+90\% & Holt-Winters & 1,974 & 2,039 & 4,013 & 49,2\% & 50,8\% \\
+ & XGBoost & 1,981 & 2,003 & 3,984 & 49,7\% & 50,3\% \\
+ & Combinação & 1,982 & 2,017 & 3,999 & 49,6\% & 50,4\% \\
+\addlinespace
+95\% & Holt-Winters & 1,974 & 3,045 & 5,019 & 39,3\% & 60,7\% \\
+ & XGBoost & 1,981 & 3,027 & 5,009 & 39,6\% & 60,4\% \\
+ & Combinação & 1,982 & 3,032 & 5,014 & 39,5\% & 60,5\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos. Quantil = previsão pontual + margem (quantil dos erros dos últimos 180 dias de cada modelo), antes de arredondar, em unidades por série-dia. Participações = média da parcela / média do quantil.}
+\end{table}

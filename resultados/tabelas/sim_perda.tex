@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa4_simulacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Perda por validade (\% das unidades recebidas)}
+\label{tab:sim_perda}
+\begin{tabular}{llrrrr}
+\toprule
+Razão (nível) & Modelo & $\theta$ = 0,05 & $\theta$ = 0,10 & $\theta$ = 0,15 & $\theta$ = 0,20 \\
+\midrule
+1:4 (80\%) & Holt-Winters & 4,0\% & 7,6\% & 10,9\% & 13,9\% \\
+ & XGBoost & 3,9\% & 7,3\% & 10,4\% & 13,4\% \\
+ & Combinação & 3,9\% & 7,4\% & 10,6\% & 13,5\% \\
+\addlinespace
+1:9 (90\%) & Holt-Winters & 5,8\% & 10,8\% & 15,2\% & 19,2\% \\
+ & XGBoost & 5,7\% & 10,6\% & 15,0\% & 19,0\% \\
+ & Combinação & 5,7\% & 10,6\% & 15,0\% & 19,0\% \\
+\addlinespace
+1:19 (95\%) & Holt-Winters & 7,6\% & 13,9\% & 19,4\% & 24,3\% \\
+ & XGBoost & 7,5\% & 13,8\% & 19,3\% & 24,2\% \\
+ & Combinação & 7,5\% & 13,8\% & 19,4\% & 24,2\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries; reposição diária até o quantil empírico do nível de serviço, arredondado para o inteiro mais próximo; prazo zero; venda perdida. Nível de serviço do newsvendor.}
+\end{table}

@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa3_holt_winters.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Holt-Winters — resultados por loja}
+\label{tab:hw_por_loja}
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+Loja & Quantis & Demanda média & MAE & MAE / demanda & Custo 1:4 & Custo 1:9 & Custo 1:19 & Cobertura 80\% & Cobertura 90\% & Cobertura 95\% \\
+\midrule
+CA\_1 & Empírico & 2,05 & 1,281 & 0,626 & 2,678 & 3,845 & 5,024 & 85,6\% & 92,2\% & 95,8\% \\
+ & Normal & 2,05 & 1,281 & 0,626 & 2,725 & 3,810 & 5,049 & 88,7\% & 92,9\% & 95,0\% \\
+\addlinespace
+CA\_2 & Empírico & 1,94 & 1,290 & 0,663 & 2,728 & 3,920 & 5,163 & 85,1\% & 91,9\% & 95,5\% \\
+ & Normal & 1,94 & 1,290 & 0,663 & 2,758 & 3,878 & 5,190 & 88,3\% & 92,5\% & 94,8\% \\
+\addlinespace
+CA\_3 & Empírico & 2,82 & 1,560 & 0,554 & 3,224 & 4,562 & 6,010 & 85,1\% & 92,3\% & 95,9\% \\
+ & Normal & 2,82 & 1,560 & 0,554 & 3,293 & 4,577 & 6,039 & 88,4\% & 92,9\% & 95,2\% \\
+\addlinespace
+CA\_4 & Empírico & 1,17 & 0,918 & 0,786 & 1,948 & 2,838 & 3,735 & 86,2\% & 92,5\% & 96,0\% \\
+ & Normal & 1,17 & 0,918 & 0,786 & 1,984 & 2,801 & 3,759 & 89,6\% & 93,2\% & 95,2\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries. MAE / demanda: erro relativo ao volume da loja, para comparar lojas de tamanhos diferentes. custo por série-dia com custo de sobra = 1; razão 1:4, 1:9 e 1:19 (sobra:falta) corresponde aos níveis de serviço de 80\%, 90\% e 95\%. Estoque = quantil arredondado para o inteiro mais próximo.}
+\end{table}

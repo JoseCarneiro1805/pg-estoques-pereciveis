@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa4_simulacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Sensibilidade do custo às regras da simulação ($\theta$ = 0,10)}
+\label{tab:sim_sensibilidade}
+\begin{tabular}{llrrrr}
+\toprule
+Razão (nível) & Modelo & Base & Sem 7 primeiros dias & Sobra final perdida & Toda sobra \\
+\midrule
+1:4 (80\%) & Holt-Winters & 1,411 & 1,424 & 1,427 & 2,678 \\
+ & XGBoost & 1,434 & 1,446 & 1,448 & 2,640 \\
+ & Combinação & 1,415 & 1,428 & 1,430 & 2,640 \\
+\addlinespace
+1:9 (90\%) & Holt-Winters & 1,785 & 1,805 & 1,810 & 3,811 \\
+ & XGBoost & 1,795 & 1,813 & 1,819 & 3,781 \\
+ & Combinação & 1,779 & 1,799 & 1,803 & 3,775 \\
+\addlinespace
+1:19 (95\%) & Holt-Winters & 2,141 & 2,167 & 2,175 & 4,989 \\
+ & XGBoost & 2,147 & 2,172 & 2,181 & 4,970 \\
+ & Combinação & 2,129 & 2,154 & 2,163 & 4,957 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries; reposição diária até o quantil empírico do nível de serviço, arredondado para o inteiro mais próximo; prazo zero; venda perdida. Nível do newsvendor; $\theta$ = 0,10. Base: custo por série-dia = unidades perdidas por validade + $c_r$ × unidades em falta, com $c_r$ = 4, 9 e 19. Sem 7 primeiros dias: mede a partir do 8º dia. Sobra final perdida: a sobra do último dia conta como perda. Toda sobra: custo de sobra sobre toda a sobra do fim do dia.}
+\end{table}

@@ -1,0 +1,47 @@
+% Gerado por scripts/etapa1_sazonalidade_anual.py — requer \usepackage{booktabs} e \usepackage{graphicx}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Efeito dos eventos de calendário sobre a demanda}
+\label{tab:saz_eventos}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Evento & Tipo & Ocorrências & Dia vs mês & 3 dias antes vs mês & 3 dias depois vs mês & Dia vs mesmo dia da semana & Dia ajustado & Anos com aumento (ajustado) & Anos com SNAP no dia \\
+\midrule
+Thanksgiving & National & 5 & -37,6\% & -1,2\% & -14,2\% & -25,7\% & -26,1\% & 0 & 0 \\
+NewYear & National & 5 & -25,2\% & -0,9\% & 7,8\% & -19,8\% & -25,9\% & 0 & 5 \\
+LaborDay & National & 5 & 23,8\% & 14,5\% & -6,4\% & 31,7\% & 17,8\% & 5 & 5 \\
+Mother's day & Cultural & 5 & 9,1\% & 8,6\% & -3,1\% & -9,1\% & -13,3\% & 0 & 2 \\
+PresidentsDay & National & 6 & 1,1\% & 4,4\% & -21,7\% & 7,5\% & 12,3\% & 6 & 0 \\
+Cinco De Mayo & Cultural & 5 & 8,9\% & 14,5\% & 4,3\% & 6,8\% & -9,6\% & 0 & 5 \\
+MemorialDay & National & 5 & 2,3\% & 0,6\% & -17,6\% & 3,1\% & 9,1\% & 5 & 0 \\
+Easter & Cultural & 6 & 13,2\% & 14,7\% & -12,9\% & -11,6\% & -8,8\% & 1 & 2 \\
+MartinLutherKingDay & National & 5 & 3,0\% & 14,0\% & -19,2\% & 6,1\% & 7,4\% & 5 & 0 \\
+ValentinesDay & Cultural & 6 & -10,1\% & 8,3\% & -6,4\% & -9,2\% & -7,0\% & 0 & 0 \\
+Halloween & Cultural & 5 & -16,9\% & -8,0\% & 4,2\% & -16,0\% & -6,5\% & 1 & 0 \\
+VeteransDay & National & 5 & 9,4\% & 16,4\% & -4,0\% & 8,2\% & 5,9\% & 4 & 0 \\
+Father's day & Cultural & 5 & 5,7\% & 1,6\% & -12,2\% & -13,6\% & -5,5\% & 1 & 0 \\
+OrthodoxEaster & Religious & 5 & 16,3\% & 4,2\% & -17,4\% & -5,6\% & -5,3\% & 1 & 1 \\
+NBAFinalsStart & Sporting & 5 & -11,1\% & 2,1\% & 9,7\% & 0,2\% & -4,6\% & 1 & 3 \\
+ColumbusDay & National & 5 & 5,1\% & 20,9\% & -11,6\% & 9,3\% & 4,1\% & 3 & 2 \\
+Christmas & National & 5 & -- & 3,8\% & -10,4\% & -- & -- & 0 & 0 \\
+Pesach End & Religious & 5 & -5,1\% & -1,4\% & -11,4\% & -7,7\% & -2,9\% & 1 & 1 \\
+LentWeek2 & Religious & 6 & -17,8\% & 0,4\% & -0,3\% & -3,4\% & 2,5\% & 4 & 0 \\
+SuperBowl & Sporting & 6 & 30,3\% & 14,9\% & -2,0\% & 4,5\% & -2,4\% & 2 & 6 \\
+Purim End & Religious & 6 & 8,7\% & -2,6\% & 3,6\% & 3,5\% & 2,1\% & 5 & 2 \\
+StPatricksDay & Cultural & 6 & -4,4\% & -2,6\% & -7,8\% & -3,4\% & 2,1\% & 4 & 0 \\
+Eid al-Fitr & Religious & 5 & -0,5\% & -0,8\% & 1,2\% & -2,2\% & -1,7\% & 1 & 1 \\
+IndependenceDay & National & 5 & 5,8\% & 18,4\% & 11,7\% & 8,5\% & 1,5\% & 3 & 5 \\
+NBAFinalsEnd & Sporting & 5 & -2,9\% & -1,5\% & -2,1\% & -4,4\% & 1,1\% & 2 & 0 \\
+Ramadan starts & Religious & 5 & 1,2\% & -3,8\% & 1,0\% & 2,7\% & 0,8\% & 4 & 2 \\
+LentStart & Religious & 6 & -12,4\% & 4,0\% & -1,0\% & 4,0\% & 0,3\% & 2 & 3 \\
+OrthodoxChristmas & Religious & 5 & 5,4\% & 9,7\% & 10,0\% & 12,9\% & -0,3\% & 2 & 5 \\
+Chanukah End & Religious & 5 & -4,6\% & 1,8\% & -0,7\% & -0,5\% & -0,3\% & 3 & 1 \\
+EidAlAdha & Religious & 5 & 1,2\% & 2,7\% & 6,3\% & 1,4\% & 0,1\% & 3 & 2 \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip
+{\footnotesize Nota: FOODS, lojas da Califórnia, dias disponíveis e de loja aberta; demanda média por série-dia. Média das ocorrências de cada evento. Referências fora dos dias $-$3 a +3 do evento: média do mês (mesmo mês e ano); média do mesmo dia da semana no mês; e referência ajustada (mesmo dia da semana e mesma condição de SNAP, até 6 semanas antes ou depois do evento). Anos com aumento: ocorrências com o dia do evento acima da referência ajustada. Natal: lojas fechadas no dia (sem dado).}
+\end{table}

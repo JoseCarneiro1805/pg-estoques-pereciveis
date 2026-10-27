@@ -1,0 +1,17 @@
+% Gerado por scripts/etapa3_holt_winters.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Holt-Winters — métricas de acurácia e de custo}
+\label{tab:hw_metricas}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Quantis & MAE & RMSE & Pinball 80\% & Pinball 90\% & Pinball 95\% & Custo 1:4 & Custo 1:9 & Custo 1:19 \\
+\midrule
+Empírico & 1,262 & 2,351 & 0,535 & 0,382 & 0,251 & 2,644 & 3,791 & 4,983 \\
+Normal & 1,262 & 2,351 & 0,543 & 0,381 & 0,253 & 2,690 & 3,766 & 5,009 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries. MAE e RMSE avaliam a previsão pontual e são iguais nos dois métodos de quantis. Pinball avalia o quantil previsto; o custo avalia a decisão de estoque. custo por série-dia com custo de sobra = 1; razão 1:4, 1:9 e 1:19 (sobra:falta) corresponde aos níveis de serviço de 80\%, 90\% e 95\%. Estoque = quantil arredondado para o inteiro mais próximo.}
+\end{table}

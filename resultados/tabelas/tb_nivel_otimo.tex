@@ -1,0 +1,50 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Nível de serviço ótimo com e sem transbordo}
+\label{tab:tb_nivel_otimo}
+\begin{tabular}{llrrrr}
+\toprule
+Razão (nível) & Cenário & $\theta$ = 0,05 & $\theta$ = 0,10 & $\theta$ = 0,15 & $\theta$ = 0,20 \\
+\midrule
+1:4 (80\%) & Sem transbordo & 99\%* & 98\% & 97\% & 96\% \\
+ & Transbordo, L = 2, c\_t = 0,00 & 99\%* & 98\% & 97\% & 96\% \\
+ & Transbordo, L = 2, c\_t = 0,05 & 99\%* & 98\% & 97\% & 96\% \\
+ & Transbordo, L = 2, c\_t = 0,10 & 99\%* & 98\% & 97\% & 96\% \\
+ & Transbordo, L = 2, c\_t = 0,20 & 99\%* & 98\% & 97\% & 96\% \\
+ & Transbordo, L = 2, c\_t = 0,50 & 99\%* & 98\% & 97\% & 96\% \\
+ & Transbordo, L = 1, c\_t = 0,00 & 99\%* & 98\% & 97\% & 96\% \\
+ & Transbordo, L = 1, c\_t = 0,05 & 99\%* & 98\% & 97\% & 96\% \\
+ & Transbordo, L = 1, c\_t = 0,10 & 99\%* & 98\% & 97\% & 96\% \\
+ & Transbordo, L = 1, c\_t = 0,20 & 99\%* & 98\% & 97\% & 96\% \\
+ & Transbordo, L = 1, c\_t = 0,50 & 99\%* & 98\% & 97\% & 96\% \\
+\addlinespace
+1:9 (90\%) & Sem transbordo & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Transbordo, L = 2, c\_t = 0,00 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Transbordo, L = 2, c\_t = 0,05 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Transbordo, L = 2, c\_t = 0,10 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Transbordo, L = 2, c\_t = 0,20 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Transbordo, L = 2, c\_t = 0,50 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Transbordo, L = 1, c\_t = 0,00 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Transbordo, L = 1, c\_t = 0,05 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Transbordo, L = 1, c\_t = 0,10 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Transbordo, L = 1, c\_t = 0,20 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & Transbordo, L = 1, c\_t = 0,50 & 99\%* & 99\%* & 99\%* & 98\% \\
+\addlinespace
+1:19 (95\%) & Sem transbordo & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Transbordo, L = 2, c\_t = 0,00 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Transbordo, L = 2, c\_t = 0,05 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Transbordo, L = 2, c\_t = 0,10 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Transbordo, L = 2, c\_t = 0,20 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Transbordo, L = 2, c\_t = 0,50 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Transbordo, L = 1, c\_t = 0,00 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Transbordo, L = 1, c\_t = 0,05 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Transbordo, L = 1, c\_t = 0,10 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Transbordo, L = 1, c\_t = 0,20 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & Transbordo, L = 1, c\_t = 0,50 & 99\%* & 99\%* & 99\%* & 99\%* \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Varredura de 70\% a 99\%, passo de 1 ponto; * = no limite da varredura. $c_t$ em unidades de $c_h$. Custo por série-dia = perda (em loja e em trânsito) + $c_r$ × faltas + $c_t$ × volume enviado, com $c_h$ = 1.}
+\end{table}

@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa4_mecanismo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Ordem dos modelos no nível do newsvendor e no nível ótimo}
+\label{tab:mec_nivel_otimo}
+\begin{tabular}{llrrrrr}
+\toprule
+Razão (nível) & Modelo & Custo no newsvendor & Nível ótimo & Custo no ótimo & Ordem (newsvendor) & Ordem (ótimo) \\
+\midrule
+1:4 (80\%) & Holt-Winters & 1,411 & 98 & 0,624 & 1 & 3 \\
+ & XGBoost & 1,434 & 98 & 0,623 & 3 & 2 \\
+ & Combinação & 1,415 & 98 & 0,621 & 2 & 1 \\
+\addlinespace
+1:9 (90\%) & Holt-Winters & 1,785 & 99 & 0,793 & 2 & 3 \\
+ & XGBoost & 1,795 & 99 & 0,791 & 3 & 2 \\
+ & Combinação & 1,779 & 99 & 0,789 & 1 & 1 \\
+\addlinespace
+1:19 (95\%) & Holt-Winters & 2,141 & 99 & 1,086 & 2 & 3 \\
+ & XGBoost & 2,147 & 99 & 1,083 & 3 & 2 \\
+ & Combinação & 2,129 & 99 & 1,080 & 1 & 1 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos, estoque = quantil arredondado para o inteiro mais próximo. Simulação com $\theta$ = 0,10; custo = perda por validade + $c_r$ × falta. Nível ótimo: o que minimiza o custo de cada modelo na varredura de 70\% a 99\%.}
+\end{table}

@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa4_simulacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Nível de serviço que minimiza o custo — custo sobre toda a sobra}
+\label{tab:sim_nivel_otimo_toda_sobra}
+\begin{tabular}{llrrrrr}
+\toprule
+Razão (nível) & Modelo & Newsvendor & $\theta$ = 0,05 & $\theta$ = 0,10 & $\theta$ = 0,15 & $\theta$ = 0,20 \\
+\midrule
+1:4 (80\%) & Holt-Winters & 80\% & 79\% & 80\% & 80\% & 80\% \\
+ & XGBoost & 80\% & 80\% & 80\% & 80\% & 81\% \\
+ & Combinação & 80\% & 80\% & 80\% & 80\% & 80\% \\
+\addlinespace
+1:9 (90\%) & Holt-Winters & 90\% & 90\% & 91\% & 91\% & 91\% \\
+ & XGBoost & 90\% & 90\% & 90\% & 91\% & 91\% \\
+ & Combinação & 90\% & 90\% & 90\% & 91\% & 91\% \\
+\addlinespace
+1:19 (95\%) & Holt-Winters & 95\% & 95\% & 96\% & 96\% & 96\% \\
+ & XGBoost & 95\% & 95\% & 96\% & 96\% & 96\% \\
+ & Combinação & 95\% & 95\% & 95\% & 96\% & 96\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries; reposição diária até o quantil empírico do nível de serviço, arredondado para o inteiro mais próximo; prazo zero; venda perdida. Varredura de 70\% a 99\%, passo de 1 ponto. * = no limite da varredura (o ótimo pode estar acima de 99\%). Custo de sobra sobre toda a sobra do fim do dia, como no newsvendor. }
+\end{table}

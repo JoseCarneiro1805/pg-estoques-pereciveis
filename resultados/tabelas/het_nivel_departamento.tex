@@ -1,0 +1,44 @@
+% Gerado por scripts/etapa4_heterogeneidade.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Nível ótimo por departamento: previsto pela fórmula com o $\theta$ do departamento × encontrado}
+\label{tab:het_nivel_departamento}
+\begin{tabular}{lllrrr}
+\toprule
+Cenário & Razão (nível) & Departamento & $\theta$ & Previsto & Encontrado \\
+\midrule
+H1 & 1:4 (80\%) & FOODS\_1 & 0,05 & 98,8\% & 99\%* \\
+ & 1:4 (80\%) & FOODS\_2 & 0,10 & 97,6\% & 98\% \\
+ & 1:4 (80\%) & FOODS\_3 & 0,15 & 96,4\% & 97\% \\
+ & 1:9 (90\%) & FOODS\_1 & 0,05 & 99,4\% & 99\%* \\
+ & 1:9 (90\%) & FOODS\_2 & 0,10 & 98,9\% & 99\%* \\
+ & 1:9 (90\%) & FOODS\_3 & 0,15 & 98,4\% & 99\%* \\
+ & 1:19 (95\%) & FOODS\_1 & 0,05 & 99,7\% & 99\%* \\
+ & 1:19 (95\%) & FOODS\_2 & 0,10 & 99,5\% & 99\%* \\
+ & 1:19 (95\%) & FOODS\_3 & 0,15 & 99,2\% & 99\%* \\
+\addlinespace
+H2 & 1:4 (80\%) & FOODS\_1 & 0,15 & 96,4\% & 97\% \\
+ & 1:4 (80\%) & FOODS\_2 & 0,10 & 97,6\% & 98\% \\
+ & 1:4 (80\%) & FOODS\_3 & 0,05 & 98,8\% & 99\%* \\
+ & 1:9 (90\%) & FOODS\_1 & 0,15 & 98,4\% & 99\%* \\
+ & 1:9 (90\%) & FOODS\_2 & 0,10 & 98,9\% & 99\%* \\
+ & 1:9 (90\%) & FOODS\_3 & 0,05 & 99,4\% & 99\%* \\
+ & 1:19 (95\%) & FOODS\_1 & 0,15 & 99,2\% & 99\%* \\
+ & 1:19 (95\%) & FOODS\_2 & 0,10 & 99,5\% & 99\%* \\
+ & 1:19 (95\%) & FOODS\_3 & 0,05 & 99,7\% & 99\%* \\
+\addlinespace
+H3 & 1:4 (80\%) & FOODS\_1 & 0,20 & 95,2\% & 95\% \\
+ & 1:4 (80\%) & FOODS\_2 & 0,10 & 97,6\% & 98\% \\
+ & 1:4 (80\%) & FOODS\_3 & 0,05 & 98,8\% & 99\%* \\
+ & 1:9 (90\%) & FOODS\_1 & 0,20 & 97,8\% & 98\% \\
+ & 1:9 (90\%) & FOODS\_2 & 0,10 & 98,9\% & 99\%* \\
+ & 1:9 (90\%) & FOODS\_3 & 0,05 & 99,4\% & 99\%* \\
+ & 1:19 (95\%) & FOODS\_1 & 0,20 & 99,0\% & 99\%* \\
+ & 1:19 (95\%) & FOODS\_2 & 0,10 & 99,5\% & 99\%* \\
+ & 1:19 (95\%) & FOODS\_3 & 0,05 & 99,7\% & 99\%* \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries, sem transbordo, reposição diária até o quantil empírico arredondado para o inteiro mais próximo; $\theta$ diferente por departamento. Custo por série-dia = perda por validade + $c_r$ × faltas, $c_h$ = 1. Combinação. Previsto: $c_r / (c_r + \theta c_h)$ com o $\theta$ do departamento. Encontrado: nível que minimiza o custo do departamento na varredura de 70\% a 99\%; * = no limite.}
+\end{table}

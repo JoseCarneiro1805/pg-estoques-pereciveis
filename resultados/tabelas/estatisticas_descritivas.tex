@@ -1,0 +1,38 @@
+% Gerado por scripts/etapa1_preparar_dados.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\caption{Estatísticas descritivas da demanda diária — FOODS, lojas da Califórnia}
+\label{tab:descritivas}
+\begin{tabular}{lrrr}
+\toprule
+Estatística & Bruta & Dias & Dias disponíveis \\
+ & (todos os dias) & disponíveis & e loja aberta \\
+\midrule
+Linhas (série × dia) & 10.995.924 & 8.423.403 & 8.400.664 \\
+Proporção de zeros & 60,4\% & 48,3\% & 48,1\% \\
+Demanda média & 1,75 & 2,28 & 2,29 \\
+Demanda mediana & 0,00 & 1,00 & 1,00 \\
+Desvio-padrão & 5,40 & 6,07 & 6,08 \\
+Máximo & 763 & 763 & 763 \\
+\addlinespace
+Média — Segunda & 1,70 & 2,22 & 2,22 \\
+Média — Terça & 1,55 & 2,02 & 2,02 \\
+Média — Quarta & 1,51 & 1,97 & 1,98 \\
+Média — Quinta & 1,52 & 1,98 & 1,99 \\
+Média — Sexta & 1,71 & 2,24 & 2,25 \\
+Média — Sábado & 2,09 & 2,73 & 2,73 \\
+Média — Domingo & 2,15 & 2,80 & 2,81 \\
+\addlinespace
+Média — dias com SNAP & 1,86 & 2,44 & 2,44 \\
+Média — dias sem SNAP & 1,69 & 2,20 & 2,21 \\
+Efeito SNAP (%) & +10,3\% & +10,7\% & +10,3\% \\
+\addlinespace
+Média — loja CA\_1 & 1,96 & 2,42 & 2,43 \\
+Média — loja CA\_2 & 1,27 & 1,93 & 1,93 \\
+Média — loja CA\_3 & 2,73 & 3,39 & 3,40 \\
+Média — loja CA\_4 & 1,03 & 1,29 & 1,30 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: dias disponíveis são os que têm registro de preço (produto à venda na loja); loja aberta exclui os dias de fechamento (25/12). A última coluna é a adotada no texto. Proporção de zeros, sem fechamento: critério A (desde o primeiro preço) 48,1\%; critério B (desde a primeira venda) 48,0\%; sem ajuste 60,3\%.}
+\end{table}

@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa4_simulacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Indicadores da simulação ($\theta$ = 0,10)}
+\label{tab:sim_indicadores}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Razão (nível) & Modelo & Perdidas & Perda \% receb. & Faltas & Atendimento & Cobertura & Estoque médio & Custo & Custo (toda sobra) \\
+\midrule
+1:4 (80\%) & Holt-Winters & 0,139 & 7,6\% & 0,318 & 84,0\% & 85,6\% & 3,082 & 1,411 & 2,678 \\
+ & XGBoost & 0,132 & 7,3\% & 0,325 & 83,7\% & 85,4\% & 3,008 & 1,434 & 2,640 \\
+ & Combinação & 0,134 & 7,4\% & 0,320 & 83,9\% & 85,5\% & 3,033 & 1,415 & 2,640 \\
+\addlinespace
+1:9 (90\%) & Holt-Winters & 0,222 & 10,8\% & 0,174 & 91,3\% & 92,3\% & 4,068 & 1,785 & 3,811 \\
+ & XGBoost & 0,218 & 10,6\% & 0,175 & 91,2\% & 92,2\% & 4,022 & 1,795 & 3,781 \\
+ & Combinação & 0,219 & 10,6\% & 0,173 & 91,3\% & 92,3\% & 4,036 & 1,779 & 3,775 \\
+\addlinespace
+1:19 (95\%) & Holt-Winters & 0,313 & 13,9\% & 0,096 & 95,2\% & 95,8\% & 5,059 & 2,141 & 4,989 \\
+ & XGBoost & 0,310 & 13,8\% & 0,097 & 95,2\% & 95,8\% & 5,031 & 2,147 & 4,970 \\
+ & Combinação & 0,311 & 13,8\% & 0,096 & 95,2\% & 95,8\% & 5,037 & 2,129 & 4,957 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries; reposição diária até o quantil empírico do nível de serviço, arredondado para o inteiro mais próximo; prazo zero; venda perdida. Nível do newsvendor; $\theta$ = 0,10. Perdidas, faltas e estoque médio (na abertura, após a reposição) em unidades por série-dia. Custo: perdas + $c_r$ × faltas. Custo (toda sobra): sobra do fim do dia + $c_r$ × faltas (sensibilidade).}
+\end{table}

@@ -1,0 +1,2 @@
+Execucao: 26/10/2026 09:50 | duracao: 0.3 min
+Modelos: Holt-Winters, XGBoost, Combinação | series: 5,748 | dias-serie avaliados por modelo: 517,280

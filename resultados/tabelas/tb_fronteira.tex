@@ -1,0 +1,30 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Perda por validade para o mesmo atendimento (fronteira desperdício × serviço)}
+\label{tab:tb_fronteira}
+\begin{tabular}{llrrr}
+\toprule
+$\theta$ & Cenário & Atendimento 90\% & Atendimento 95\% & Atendimento 98\% \\
+\midrule
+$\theta$ = 0,05 & Sem transbordo & 5,2\% & 7,3\% & 10,5\% \\
+ & Transbordo, L = 2 & 5,3\% & 7,4\% & 10,6\% \\
+ & Transbordo, L = 1 & 5,2\% & 7,3\% & 10,5\% \\
+\addlinespace
+$\theta$ = 0,10 & Sem transbordo & 9,9\% & 13,6\% & 19,0\% \\
+ & Transbordo, L = 2 & 10,0\% & 13,8\% & 19,1\% \\
+ & Transbordo, L = 1 & 9,8\% & 13,6\% & 19,0\% \\
+\addlinespace
+$\theta$ = 0,15 & Sem transbordo & 14,1\% & 19,1\% & 26,0\% \\
+ & Transbordo, L = 2 & 14,3\% & 19,3\% & 26,2\% \\
+ & Transbordo, L = 1 & 14,1\% & 19,1\% & 26,0\% \\
+\addlinespace
+$\theta$ = 0,20 & Sem transbordo & 17,9\% & 24,0\% & 31,9\% \\
+ & Transbordo, L = 2 & 18,2\% & 24,2\% & 32,1\% \\
+ & Transbordo, L = 1 & 17,9\% & 24,0\% & 31,9\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Perda (\% das unidades recebidas do fornecedor) quando o atendimento é 90\%, 95\% ou 98\%, interpolada linearmente ao longo da varredura de níveis (70\% a 99\%). Se, no mesmo atendimento, a perda com transbordo é menor, o transbordo desloca a fronteira.}
+\end{table}

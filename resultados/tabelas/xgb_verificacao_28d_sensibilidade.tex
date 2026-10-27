@@ -1,0 +1,20 @@
+% Gerado por scripts/etapa3_xgboost.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{XGBoost — teste completo versus últimos 28 dias (sensibilidade: estoque arredondado para cima)}
+\label{tab:xgb_verificacao_28d_sensibilidade}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Período & Quantis & MAE & RMSE & Custo 1:4 & Custo 1:9 & Custo 1:19 & Cobertura 80\% & Cobertura 90\% & Cobertura 95\% \\
+\midrule
+90 dias & Empírico & 1,246 & 2,281 & 2,727 & 3,838 & 4,985 & 90,1\% & 94,8\% & 97,2\% \\
+ & Normal & 1,246 & 2,281 & 2,847 & 3,836 & 4,918 & 92,3\% & 95,2\% & 96,7\% \\
+\addlinespace
+Últimos 28 dias & Empírico & 1,257 & 2,236 & 2,712 & 3,819 & 4,941 & 90,0\% & 94,6\% & 97,2\% \\
+ & Normal & 1,257 & 2,236 & 2,840 & 3,817 & 4,864 & 92,2\% & 95,0\% & 96,6\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: 90 dias: 26/01 a 24/04/2016; últimos 28 dias: 28/03 a 24/04/2016 (convenção da competição M5), subconjunto do teste completo. custo por série-dia com custo de sobra = 1; razão 1:4, 1:9 e 1:19 (sobra:falta) corresponde aos níveis de serviço de 80\%, 90\% e 95\%. Estoque = quantil arredondado para cima.}
+\end{table}

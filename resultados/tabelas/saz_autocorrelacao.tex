@@ -1,0 +1,20 @@
+% Gerado por scripts/etapa1_sazonalidade_anual.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Autocorrelação da demanda diária agregada}
+\label{tab:saz_autocorrelacao}
+\begin{tabular}{lrrr}
+\toprule
+Defasagem & Série bruta & Sem tendência & Sem tendência e sem efeito semanal \\
+\midrule
+7 dias & 0,865 & 0,745 & 0,307 \\
+182 dias & 0,773 & 0,667 & 0,100 \\
+357 dias & 0,709 & 0,673 & 0,137 \\
+364 dias & 0,796 & 0,831 & 0,554 \\
+371 dias & 0,736 & 0,711 & 0,237 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: FOODS, lojas da Califórnia, dias disponíveis e de loja aberta; demanda média por série-dia. Série diária da demanda média por série-dia (n = 1.673 dias com tendência estimada). Sem tendência: razão para a média móvel centrada de 365 dias. Limite de significância aproximado: $\pm$0,048 ($\pm 1{,}96/\sqrt{n}$).}
+\end{table}

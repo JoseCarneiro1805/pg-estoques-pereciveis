@@ -1,0 +1,2 @@
+Execucao: 26/10/2026 13:38 | duracao: 0.2 min
+Series: 5,748 | cenarios: H1, H2, H3 | modelos: Holt-Winters, XGBoost, Combinação

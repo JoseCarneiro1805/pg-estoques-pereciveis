@@ -1,0 +1,17 @@
+% Gerado por scripts/etapa3_xgboost.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{XGBoost — calibração dos quantis (sensibilidade: estoque arredondado para cima)}
+\label{tab:xgb_calibracao_sensibilidade}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Quantis & Quantil 80\% & Quantil 90\% & Quantil 95\% & Decisão 80\% & Decisão 90\% & Decisão 95\% & Atend. 80\% & Atend. 90\% & Atend. 95\% \\
+\midrule
+Empírico & 79,2\% & 88,6\% & 93,8\% & 90,1\% & 94,8\% & 97,2\% & 87,6\% & 93,4\% & 96,4\% \\
+Normal & 83,6\% & 89,3\% & 92,5\% & 92,3\% & 95,2\% & 96,7\% & 90,5\% & 94,0\% & 95,8\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries. Quantil: \% dos dias com demanda até o quantil previsto, antes de arredondar (avalia o modelo). Decisão: \% dos dias sem falta, com o estoque formado pelo quantil arredondado para cima (avalia a decisão). O ideal é igual ao nível de serviço. Atend.: \% da demanda total atendida.}
+\end{table}

@@ -1,0 +1,4 @@
+﻿Modelo,MAE,RMSE,Pinball 80%,Pinball 90%,Pinball 95%,Custo 1:4,Custo 1:9,Custo 1:19
+Holt-Winters,3,3,3,3,2,3,3,2
+XGBoost,2,1,2,2,3,2,2,3
+Combinação,1,2,1,1,1,1,1,1

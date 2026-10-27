@@ -1,0 +1,29 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Sensibilidade ao estado inicial: $c_t$ de equilíbrio com e sem os primeiros $L_f$ + 7 dias ($\theta$ = 0,10)}
+\label{tab:tbr_aquecimento}
+\begin{tabular}{llrrrr}
+\toprule
+Razão (nível) & Prazo do fornecedor & Completo, L\_t = 1 & Sem os L\_f+7 dias iniciais, L\_t = 1 & Completo, L\_t = 2 & Sem os L\_f+7 dias iniciais, L\_t = 2 \\
+\midrule
+1:4 (80\%) & L\_f = 0 & -0,679 & -0,700 & -0,656 & -0,671 \\
+ & L\_f = 1 & 0,021 & 0,017 & -0,539 & -0,551 \\
+ & L\_f = 2 & 0,153 & 0,152 & -0,216 & -0,217 \\
+ & L\_f = 3 & 0,207 & 0,213 & -0,120 & -0,111 \\
+\addlinespace
+1:9 (90\%) & L\_f = 0 & -0,690 & -0,706 & -0,681 & -0,692 \\
+ & L\_f = 1 & 0,106 & 0,106 & -0,628 & -0,643 \\
+ & L\_f = 2 & 0,273 & 0,272 & -0,233 & -0,230 \\
+ & L\_f = 3 & 0,376 & 0,379 & -0,103 & -0,095 \\
+\addlinespace
+1:19 (95\%) & L\_f = 0 & -0,676 & -0,694 & -0,688 & -0,702 \\
+ & L\_f = 1 & 0,211 & 0,209 & -0,685 & -0,701 \\
+ & L\_f = 2 & 0,434 & 0,431 & -0,224 & -0,225 \\
+ & L\_f = 3 & 0,568 & 0,567 & -0,082 & -0,071 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Prazo do fornecedor $L_f$: pedido do fim do dia t chega em t+1+$L_f$; alvo de $L_f$+1 dias (versão incondicional). Nível do newsvendor; unidades de $c_h$.}
+\end{table}

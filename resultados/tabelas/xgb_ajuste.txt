@@ -1,0 +1,7 @@
+Treino: d_522 a d_1613 (5,097,389 linhas) | validacao: d_1614 a d_1641 (158,882 linhas)
+Parametros fixos: {'eta': 0.1, 'max_depth': 8, 'min_child_weight': 20, 'subsample': 0.7, 'colsample_bytree': 0.7, 'reg_lambda': 1.0, 'max_bin': 256, 'tree_method': 'hist', 'max_cat_to_onehot': 1, 'nthread': 16, 'seed': 0}
+
+reg:tweedie        melhor n. de arvores:   546 | MAE 1.2148 | RMSE 2.5951 | 318 s
+reg:squarederror   melhor n. de arvores:    90 | MAE 1.2347 | RMSE 2.5784 | 45 s
+
+Criterio de escolha: menor RMSE (a previsao pontual deve ser a media).

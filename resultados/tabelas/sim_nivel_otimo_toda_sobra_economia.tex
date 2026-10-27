@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa4_simulacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Redução de custo ao usar o nível ótimo em vez do newsvendor — custo sobre toda a sobra}
+\label{tab:sim_nivel_otimo_toda_sobra_economia}
+\begin{tabular}{llrrrr}
+\toprule
+Razão (nível) & Modelo & $\theta$ = 0,05 & $\theta$ = 0,10 & $\theta$ = 0,15 & $\theta$ = 0,20 \\
+\midrule
+1:4 (80\%) & Holt-Winters & +0,0\% & +0,0\% & +0,0\% & +0,0\% \\
+ & XGBoost & +0,0\% & +0,0\% & +0,0\% & +0,0\% \\
+ & Combinação & +0,0\% & +0,0\% & +0,0\% & +0,0\% \\
+\addlinespace
+1:9 (90\%) & Holt-Winters & +0,0\% & +0,0\% & +0,1\% & +0,1\% \\
+ & XGBoost & +0,0\% & +0,0\% & +0,0\% & +0,0\% \\
+ & Combinação & +0,0\% & +0,0\% & +0,0\% & +0,0\% \\
+\addlinespace
+1:19 (95\%) & Holt-Winters & +0,0\% & +0,0\% & +0,1\% & +0,1\% \\
+ & XGBoost & +0,0\% & +0,1\% & +0,1\% & +0,2\% \\
+ & Combinação & +0,0\% & +0,0\% & +0,0\% & +0,1\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), 5.748 séries; reposição diária até o quantil empírico do nível de serviço, arredondado para o inteiro mais próximo; prazo zero; venda perdida. Redução \% do custo no nível ótimo em relação ao nível do newsvendor.}
+\end{table}

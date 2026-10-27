@@ -1,0 +1,18 @@
+% Gerado por scripts/etapa4_mecanismo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Assimetria do erro da previsão pontual}
+\label{tab:mec_erro_pontual}
+\begin{tabular}{lrrrrrr}
+\toprule
+Modelo & Viés (previsão $-$ demanda) & \% dias previu demais & Erro médio para cima & \% dias previu de menos & Erro médio para baixo & Parcela do MAE para cima \\
+\midrule
+Holt-Winters & -0,011 & 59,9\% & 1,045 & 35,6\% & 1,786 & 49,6\% \\
+XGBoost & -0,013 & 64,2\% & 0,961 & 35,7\% & 1,765 & 49,5\% \\
+Combinação & -0,012 & 64,3\% & 0,958 & 35,6\% & 1,764 & 49,5\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos, estoque = quantil arredondado para o inteiro mais próximo. Erro = previsão $-$ demanda (positivo = previu demais), em unidades por série-dia. Os dias restantes são acertos exatos.}
+\end{table}

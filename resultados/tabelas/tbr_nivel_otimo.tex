@@ -1,0 +1,53 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Nível de serviço ótimo por prazo do fornecedor, com e sem transbordo ($c_t$ = 0)}
+\label{tab:tbr_nivel_otimo}
+\begin{tabular}{lllrrrr}
+\toprule
+Razão (nível) & Prazo do fornecedor & Cenário & $\theta$ = 0,05 & $\theta$ = 0,10 & $\theta$ = 0,15 & $\theta$ = 0,20 \\
+\midrule
+1:4 (80\%) & L\_f = 0 & Sem transbordo & 99\%* & 98\% & 97\% & 96\% \\
+ & L\_f = 0 & Transbordo, L\_t = 1 & 99\%* & 98\% & 97\% & 96\% \\
+ & L\_f = 0 & Transbordo, L\_t = 2 & 99\%* & 98\% & 97\% & 96\% \\
+ & L\_f = 1 & Sem transbordo & 99\%* & 97\% & 96\% & 95\% \\
+ & L\_f = 1 & Transbordo, L\_t = 1 & 99\%* & 97\% & 96\% & 95\% \\
+ & L\_f = 1 & Transbordo, L\_t = 2 & 99\%* & 98\% & 96\% & 95\% \\
+ & L\_f = 2 & Sem transbordo & 98\% & 97\% & 96\% & 96\% \\
+ & L\_f = 2 & Transbordo, L\_t = 1 & 98\% & 97\% & 96\% & 95\% \\
+ & L\_f = 2 & Transbordo, L\_t = 2 & 98\% & 97\% & 96\% & 96\% \\
+ & L\_f = 3 & Sem transbordo & 98\% & 97\% & 97\% & 96\% \\
+ & L\_f = 3 & Transbordo, L\_t = 1 & 98\% & 97\% & 96\% & 96\% \\
+ & L\_f = 3 & Transbordo, L\_t = 2 & 98\% & 97\% & 97\% & 96\% \\
+\addlinespace
+1:9 (90\%) & L\_f = 0 & Sem transbordo & 99\%* & 99\%* & 99\%* & 98\% \\
+ & L\_f = 0 & Transbordo, L\_t = 1 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & L\_f = 0 & Transbordo, L\_t = 2 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & L\_f = 1 & Sem transbordo & 99\%* & 99\%* & 99\%* & 98\% \\
+ & L\_f = 1 & Transbordo, L\_t = 1 & 99\%* & 99\%* & 98\% & 98\% \\
+ & L\_f = 1 & Transbordo, L\_t = 2 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & L\_f = 2 & Sem transbordo & 99\%* & 99\%* & 99\%* & 98\% \\
+ & L\_f = 2 & Transbordo, L\_t = 1 & 99\%* & 99\%* & 98\% & 98\% \\
+ & L\_f = 2 & Transbordo, L\_t = 2 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & L\_f = 3 & Sem transbordo & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 3 & Transbordo, L\_t = 1 & 99\%* & 99\%* & 99\%* & 98\% \\
+ & L\_f = 3 & Transbordo, L\_t = 2 & 99\%* & 99\%* & 99\%* & 98\% \\
+\addlinespace
+1:19 (95\%) & L\_f = 0 & Sem transbordo & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 0 & Transbordo, L\_t = 1 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 0 & Transbordo, L\_t = 2 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 1 & Sem transbordo & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 1 & Transbordo, L\_t = 1 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 1 & Transbordo, L\_t = 2 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 2 & Sem transbordo & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 2 & Transbordo, L\_t = 1 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 2 & Transbordo, L\_t = 2 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 3 & Sem transbordo & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 3 & Transbordo, L\_t = 1 & 99\%* & 99\%* & 99\%* & 99\%* \\
+ & L\_f = 3 & Transbordo, L\_t = 2 & 99\%* & 99\%* & 99\%* & 99\%* \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Prazo do fornecedor $L_f$: pedido do fim do dia t chega em t+1+$L_f$; alvo de $L_f$+1 dias (versão incondicional). Varredura de 70\% a 99\%; * = no limite. Custo por série-dia = perda (loja + trânsito) + $c_r$ × faltas + $c_t$ × volume, $c_h$ = 1.}
+\end{table}

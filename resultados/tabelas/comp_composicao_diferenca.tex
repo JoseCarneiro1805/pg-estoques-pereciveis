@@ -1,0 +1,18 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{De onde vem a diferença entre os quantis do XGBoost e do Holt-Winters}
+\label{tab:comp_composicao_diferenca}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Nível & $\Delta$ previsão & $\Delta$ margem & $\Delta$ quantil & $\Delta$ margem / margem HW & |$\Delta$ previsão| & |$\Delta$ margem| & |$\Delta$ quantil| \\
+\midrule
+80\% & 0,007 & -0,067 & -0,060 & -6,4\% & 0,335 & 0,150 & 0,352 \\
+90\% & 0,007 & -0,037 & -0,029 & -1,8\% & 0,335 & 0,161 & 0,359 \\
+95\% & 0,007 & -0,018 & -0,011 & -0,6\% & 0,335 & 0,200 & 0,377 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos. Quantil = previsão pontual + margem (quantil dos erros dos últimos 180 dias de cada modelo), antes de arredondar, em unidades por série-dia. Participações = média da parcela / média do quantil. $\Delta$: XGBoost $-$ Holt-Winters; média das diferenças diárias ($\Delta$) e média das diferenças em valor absoluto (|$\Delta$|).}
+\end{table}

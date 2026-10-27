@@ -1,0 +1,28 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs} e \usepackage{graphicx}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Indicadores com e sem transbordo ($\theta$ = 0,10)}
+\label{tab:tb_indicadores}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+Razão (nível) & Cenário & Perda em loja & Perda em trânsito & Perda \% receb. & Faltas & Atendimento & Volume enviado & Volume \% do fluxo & Custo (c\_t = 0) & Custo (c\_t = 0,10) \\
+\midrule
+1:4 (80\%) & Sem transbordo & 0,134 & 0,000 & 7,4\% & 0,320 & 83,9\% & 0,000 & 0,0\% & 1,415 & 1,415 \\
+ & Transbordo, L = 2 & 0,127 & 0,009 & 7,4\% & 0,327 & 83,6\% & 0,045 & 2,4\% & 1,445 & 1,450 \\
+ & Transbordo, L = 1 & 0,126 & 0,004 & 7,2\% & 0,329 & 83,5\% & 0,044 & 2,4\% & 1,445 & 1,449 \\
+\addlinespace
+1:9 (90\%) & Sem transbordo & 0,219 & 0,000 & 10,6\% & 0,173 & 91,3\% & 0,000 & 0,0\% & 1,779 & 1,779 \\
+ & Transbordo, L = 2 & 0,212 & 0,009 & 10,7\% & 0,177 & 91,1\% & 0,046 & 2,2\% & 1,811 & 1,815 \\
+ & Transbordo, L = 1 & 0,211 & 0,004 & 10,5\% & 0,177 & 91,1\% & 0,045 & 2,1\% & 1,810 & 1,815 \\
+\addlinespace
+1:19 (95\%) & Sem transbordo & 0,311 & 0,000 & 13,8\% & 0,096 & 95,2\% & 0,000 & 0,0\% & 2,129 & 2,129 \\
+ & Transbordo, L = 2 & 0,303 & 0,009 & 13,9\% & 0,097 & 95,1\% & 0,047 & 2,1\% & 2,161 & 2,166 \\
+ & Transbordo, L = 1 & 0,303 & 0,005 & 13,7\% & 0,097 & 95,1\% & 0,046 & 2,0\% & 2,160 & 2,164 \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Nível do newsvendor; $\theta$ = 0,10. Perdas, faltas e volume em unidades por série-dia. Perda \% receb.: perda total (loja + trânsito) sobre as unidades recebidas do fornecedor. Volume \% do fluxo: unidades enviadas sobre o total que entrou nas lojas (fornecedor + transbordo). Custo por série-dia = perda (em loja e em trânsito) + $c_r$ × faltas + $c_t$ × volume enviado, com $c_h$ = 1.}
+\end{table}

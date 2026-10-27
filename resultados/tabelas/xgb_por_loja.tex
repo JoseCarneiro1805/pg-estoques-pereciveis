@@ -1,0 +1,26 @@
+% Gerado por scripts/etapa3_xgboost.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{XGBoost — resultados por loja}
+\label{tab:xgb_por_loja}
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+Loja & Quantis & Demanda média & MAE & MAE / demanda & Custo 1:4 & Custo 1:9 & Custo 1:19 & Cobertura 80\% & Cobertura 90\% & Cobertura 95\% \\
+\midrule
+CA\_1 & Empírico & 2,05 & 1,260 & 0,616 & 2,663 & 3,854 & 5,045 & 85,3\% & 92,0\% & 95,7\% \\
+ & Normal & 2,05 & 1,260 & 0,616 & 2,718 & 3,815 & 5,063 & 88,8\% & 92,8\% & 95,0\% \\
+\addlinespace
+CA\_2 & Empírico & 1,94 & 1,269 & 0,652 & 2,719 & 3,903 & 5,149 & 84,9\% & 91,9\% & 95,6\% \\
+ & Normal & 1,94 & 1,269 & 0,652 & 2,738 & 3,863 & 5,186 & 88,3\% & 92,5\% & 94,7\% \\
+\addlinespace
+CA\_3 & Empírico & 2,82 & 1,529 & 0,542 & 3,194 & 4,544 & 6,015 & 84,9\% & 92,2\% & 95,8\% \\
+ & Normal & 2,82 & 1,529 & 0,542 & 3,260 & 4,554 & 6,028 & 88,5\% & 92,9\% & 95,1\% \\
+\addlinespace
+CA\_4 & Empírico & 1,17 & 0,926 & 0,793 & 1,944 & 2,827 & 3,723 & 86,2\% & 92,5\% & 96,0\% \\
+ & Normal & 1,17 & 0,926 & 0,793 & 1,986 & 2,792 & 3,731 & 90,0\% & 93,5\% & 95,4\% \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries. MAE / demanda: erro relativo ao volume da loja, para comparar lojas de tamanhos diferentes. custo por série-dia com custo de sobra = 1; razão 1:4, 1:9 e 1:19 (sobra:falta) corresponde aos níveis de serviço de 80\%, 90\% e 95\%. Estoque = quantil arredondado para o inteiro mais próximo.}
+\end{table}

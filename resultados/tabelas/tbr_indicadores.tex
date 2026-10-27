@@ -1,0 +1,55 @@
+% Gerado por scripts/etapa5_transbordo.py — requer \usepackage{booktabs} e \usepackage{graphicx}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Indicadores com e sem transbordo por prazo do fornecedor ($\theta$ = 0,10, nível do newsvendor)}
+\label{tab:tbr_indicadores}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrrrrrr}
+\toprule
+Razão (nível) & Prazo do fornecedor & Cenário & Perda em loja & Perda em trânsito & Faltas & Atendimento & Cobertura & Volume enviado & Loja-dias com envio & Custo (c\_t = 0) \\
+\midrule
+1:4 (80\%) & L\_f = 0 & Sem transbordo & 0,134 & 0,000 & 0,320 & 83,9\% & 85,5\% & 0,000 & 0,0\% & 1,415 \\
+ & L\_f = 0 & Transbordo, L\_t = 1 & 0,126 & 0,004 & 0,329 & 83,5\% & 85,5\% & 0,044 & 5,4\% & 1,445 \\
+ & L\_f = 0 & Transbordo, L\_t = 2 & 0,127 & 0,009 & 0,327 & 83,6\% & 85,5\% & 0,045 & 6,4\% & 1,445 \\
+ & L\_f = 1 & Sem transbordo & 0,216 & 0,000 & 0,298 & 85,1\% & 82,1\% & 0,000 & 0,0\% & 1,407 \\
+ & L\_f = 1 & Transbordo, L\_t = 1 & 0,197 & 0,010 & 0,299 & 85,0\% & 81,5\% & 0,099 & 11,5\% & 1,405 \\
+ & L\_f = 1 & Transbordo, L\_t = 2 & 0,193 & 0,017 & 0,311 & 84,4\% & 80,8\% & 0,092 & 11,5\% & 1,456 \\
+ & L\_f = 2 & Sem transbordo & 0,285 & 0,000 & 0,302 & 84,8\% & 84,9\% & 0,000 & 0,0\% & 1,494 \\
+ & L\_f = 2 & Transbordo, L\_t = 1 & 0,255 & 0,015 & 0,300 & 85,0\% & 84,5\% & 0,152 & 16,2\% & 1,471 \\
+ & L\_f = 2 & Transbordo, L\_t = 2 & 0,249 & 0,027 & 0,312 & 84,3\% & 83,9\% & 0,141 & 16,3\% & 1,524 \\
+ & L\_f = 3 & Sem transbordo & 0,349 & 0,000 & 0,309 & 84,5\% & 86,0\% & 0,000 & 0,0\% & 1,586 \\
+ & L\_f = 3 & Transbordo, L\_t = 1 & 0,308 & 0,020 & 0,304 & 84,8\% & 85,7\% & 0,202 & 20,0\% & 1,545 \\
+ & L\_f = 3 & Transbordo, L\_t = 2 & 0,300 & 0,036 & 0,318 & 84,0\% & 85,1\% & 0,187 & 19,9\% & 1,609 \\
+\addlinespace
+1:9 (90\%) & L\_f = 0 & Sem transbordo & 0,219 & 0,000 & 0,173 & 91,3\% & 92,3\% & 0,000 & 0,0\% & 1,779 \\
+ & L\_f = 0 & Transbordo, L\_t = 1 & 0,211 & 0,004 & 0,177 & 91,1\% & 92,3\% & 0,045 & 5,2\% & 1,810 \\
+ & L\_f = 0 & Transbordo, L\_t = 2 & 0,212 & 0,009 & 0,177 & 91,1\% & 92,3\% & 0,046 & 6,1\% & 1,811 \\
+ & L\_f = 1 & Sem transbordo & 0,321 & 0,000 & 0,170 & 91,5\% & 89,4\% & 0,000 & 0,0\% & 1,849 \\
+ & L\_f = 1 & Transbordo, L\_t = 1 & 0,303 & 0,010 & 0,169 & 91,5\% & 89,1\% & 0,103 & 11,1\% & 1,838 \\
+ & L\_f = 1 & Transbordo, L\_t = 2 & 0,297 & 0,018 & 0,177 & 91,1\% & 88,6\% & 0,096 & 11,1\% & 1,910 \\
+ & L\_f = 2 & Sem transbordo & 0,403 & 0,000 & 0,178 & 91,1\% & 90,9\% & 0,000 & 0,0\% & 2,008 \\
+ & L\_f = 2 & Transbordo, L\_t = 1 & 0,373 & 0,016 & 0,175 & 91,2\% & 90,8\% & 0,161 & 15,6\% & 1,964 \\
+ & L\_f = 2 & Transbordo, L\_t = 2 & 0,365 & 0,028 & 0,183 & 90,8\% & 90,3\% & 0,149 & 15,7\% & 2,042 \\
+ & L\_f = 3 & Sem transbordo & 0,472 & 0,000 & 0,188 & 90,5\% & 91,2\% & 0,000 & 0,0\% & 2,168 \\
+ & L\_f = 3 & Transbordo, L\_t = 1 & 0,430 & 0,022 & 0,182 & 90,9\% & 91,1\% & 0,216 & 19,4\% & 2,087 \\
+ & L\_f = 3 & Transbordo, L\_t = 2 & 0,420 & 0,038 & 0,192 & 90,4\% & 90,6\% & 0,199 & 19,3\% & 2,189 \\
+\addlinespace
+1:19 (95\%) & L\_f = 0 & Sem transbordo & 0,311 & 0,000 & 0,096 & 95,2\% & 95,8\% & 0,000 & 0,0\% & 2,129 \\
+ & L\_f = 0 & Transbordo, L\_t = 1 & 0,303 & 0,005 & 0,097 & 95,1\% & 95,8\% & 0,046 & 5,0\% & 2,160 \\
+ & L\_f = 0 & Transbordo, L\_t = 2 & 0,303 & 0,009 & 0,097 & 95,1\% & 95,8\% & 0,047 & 5,7\% & 2,161 \\
+ & L\_f = 1 & Sem transbordo & 0,433 & 0,000 & 0,098 & 95,1\% & 93,7\% & 0,000 & 0,0\% & 2,302 \\
+ & L\_f = 1 & Transbordo, L\_t = 1 & 0,415 & 0,011 & 0,098 & 95,1\% & 93,7\% & 0,106 & 10,5\% & 2,279 \\
+ & L\_f = 1 & Transbordo, L\_t = 2 & 0,409 & 0,019 & 0,102 & 94,9\% & 93,3\% & 0,098 & 10,5\% & 2,369 \\
+ & L\_f = 2 & Sem transbordo & 0,525 & 0,000 & 0,107 & 94,7\% & 94,4\% & 0,000 & 0,0\% & 2,549 \\
+ & L\_f = 2 & Transbordo, L\_t = 1 & 0,496 & 0,017 & 0,103 & 94,8\% & 94,5\% & 0,166 & 14,9\% & 2,477 \\
+ & L\_f = 2 & Transbordo, L\_t = 2 & 0,487 & 0,029 & 0,109 & 94,5\% & 94,1\% & 0,153 & 15,0\% & 2,583 \\
+ & L\_f = 3 & Sem transbordo & 0,600 & 0,000 & 0,117 & 94,2\% & 94,4\% & 0,000 & 0,0\% & 2,814 \\
+ & L\_f = 3 & Transbordo, L\_t = 1 & 0,559 & 0,023 & 0,111 & 94,4\% & 94,5\% & 0,225 & 18,7\% & 2,686 \\
+ & L\_f = 3 & Transbordo, L\_t = 2 & 0,547 & 0,039 & 0,118 & 94,1\% & 94,1\% & 0,206 & 18,6\% & 2,831 \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip
+{\footnotesize Nota: simulação de 90 dias (26/01 a 24/04/2016), combinação, 1.437 itens × 4 lojas; reposição diária pelo fornecedor até o quantil do nível de serviço, arredondado para o inteiro mais próximo; venda perdida. Prazo do fornecedor $L_f$: pedido do fim do dia t chega em t+1+$L_f$; alvo de $L_f$+1 dias (versão incondicional). Perdas, faltas e volume em unidades por série-dia. Custo por série-dia = perda (loja + trânsito) + $c_r$ × faltas + $c_t$ × volume, $c_h$ = 1.}
+\end{table}

@@ -1,0 +1,34 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Comparação dos modelos — por padrão de demanda}
+\label{tab:comp_por_classe}
+\begin{tabular}{llrrrr}
+\toprule
+Padrão de demanda & Modelo & MAE & Custo 1:4 & Custo 1:9 & Custo 1:19 \\
+\midrule
+Suave & Holt-Winters & 2,547 & 4,959 & 6,738 & 8,522 \\
+ & XGBoost & 2,492 & 4,937 & 6,728 & 8,559 \\
+ & Combinação & 2,490 & 4,896 & 6,679 & 8,472 \\
+\addlinespace
+Errática & Holt-Winters & 2,788 & 5,695 & 7,976 & 10,453 \\
+ & XGBoost & 2,686 & 5,542 & 7,861 & 10,425 \\
+ & Combinação & 2,703 & 5,567 & 7,852 & 10,363 \\
+\addlinespace
+Intermitente & Holt-Winters & 0,881 & 1,864 & 2,676 & 3,492 \\
+ & XGBoost & 0,880 & 1,855 & 2,670 & 3,483 \\
+ & Combinação & 0,877 & 1,853 & 2,666 & 3,478 \\
+\addlinespace
+Irregular & Holt-Winters & 1,347 & 2,943 & 4,376 & 5,928 \\
+ & XGBoost & 1,327 & 2,944 & 4,379 & 5,939 \\
+ & Combinação & 1,328 & 2,923 & 4,354 & 5,902 \\
+\addlinespace
+Sem venda no treino & Holt-Winters & 0,929 & 1,930 & 2,743 & 3,517 \\
+ & XGBoost & 0,889 & 1,970 & 2,665 & 3,717 \\
+ & Combinação & 0,898 & 1,900 & 2,609 & 3,539 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos, estoque = quantil arredondado para o inteiro mais próximo. Combinação: média simples dos quantis (e das previsões pontuais) do Holt-Winters e do XGBoost.}
+\end{table}

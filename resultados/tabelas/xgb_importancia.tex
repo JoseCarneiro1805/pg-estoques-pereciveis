@@ -1,0 +1,48 @@
+% Gerado por scripts/etapa3_xgboost.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{XGBoost — importância das variáveis}
+\label{tab:xgb_importancia}
+\begin{tabular}{lrr}
+\toprule
+Variável & Família & Participação no ganho \\
+\midrule
+media\_7d & Médias móveis e histórico & 27,7 \\
+venda\_lag\_1 & Defasagens de venda & 27,0 \\
+media\_28d & Médias móveis e histórico & 21,2 \\
+media\_mesmo\_dia\_4s & Médias móveis e histórico & 5,2 \\
+venda\_lag\_7 & Defasagens de venda & 3,4 \\
+venda\_lag\_364 & Defasagens de venda & 2,6 \\
+item & Identificadores & 2,2 \\
+venda\_lag\_2 & Defasagens de venda & 2,0 \\
+dia\_semana & Calendário & 1,3 \\
+venda\_lag\_14 & Defasagens de venda & 1,3 \\
+venda\_lag\_3 & Defasagens de venda & 0,8 \\
+venda\_lag\_28 & Defasagens de venda & 0,7 \\
+preco\_rel\_historico & Preço & 0,6 \\
+desvio\_28d & Médias móveis e histórico & 0,6 \\
+zeros\_28d & Médias móveis e histórico & 0,5 \\
+dias\_desde\_venda & Médias móveis e histórico & 0,5 \\
+media\_91d & Médias móveis e histórico & 0,4 \\
+nome\_evento & Eventos & 0,4 \\
+idade\_serie & Médias móveis e histórico & 0,3 \\
+dia\_mes & Calendário & 0,3 \\
+preco & Preço & 0,2 \\
+semana\_ano & Calendário & 0,2 \\
+preco\_rel\_departamento & Preço & 0,2 \\
+loja & Identificadores & 0,1 \\
+preco\_var\_semana & Preço & 0,1 \\
+mes & Calendário & 0,1 \\
+snap & SNAP & 0,0 \\
+evento\_amanha & Eventos & 0,0 \\
+loja\_fechada & Reforma CA\_2 e fechamento & 0,0 \\
+tipo\_evento & Eventos & 0,0 \\
+pos\_reforma\_ca2 & Reforma CA\_2 e fechamento & 0,0 \\
+departamento & Identificadores & 0,0 \\
+tem\_evento & Eventos & 0,0 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: participação de cada variável no ganho total das árvores (redução do erro de treino), em \%, média dos 13 modelos reestimados no teste.}
+\end{table}

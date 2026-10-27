@@ -1,0 +1,18 @@
+% Gerado por scripts/etapa3_comparacao.py — requer \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\small
+\caption{Posição dos modelos em cada critério, com empates estatísticos}
+\label{tab:comp_ordenacao}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Modelo & MAE & RMSE & Pinball 80\% & Pinball 90\% & Pinball 95\% & Custo 1:4 & Custo 1:9 & Custo 1:19 \\
+\midrule
+Holt-Winters & 3º & 3º & 3º & 2º (empate) & 2º (empate) & 3º & 2º (empate) & 2º (empate) \\
+XGBoost & 1º (empate) & 1º (empate) & 2º & 2º (empate) & 2º (empate) & 2º & 2º (empate) & 2º (empate) \\
+Combinação & 1º (empate) & 1º (empate) & 1º & 1º & 1º & 1º & 1º & 1º \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize Nota: teste de 90 dias (26/01 a 24/04/2016), 5.748 séries, quantis empíricos, estoque = quantil arredondado para o inteiro mais próximo. Posição = 1 + número de modelos significativamente melhores (intervalo de 95\% de confiança da diferença, item como unidade, sem conter zero). Modelos na mesma posição estão empatados. RMSE: teste feito sobre o erro quadrático médio, que ordena os modelos como o RMSE.}
+\end{table}
