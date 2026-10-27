@@ -107,6 +107,7 @@ grava suas tabelas em `resultados/tabelas/` e suas figuras em
 | 10 | `python scripts/etapa4_heterogeneidade.py` | Teste com taxa de perecibilidade diferente por departamento | `het_*` | < 1 min |
 | 11 | `python scripts/etapa5_transbordo.py` | Transbordo lateral preventivo entre as quatro lojas | `tb_*`, `fig_tb_*` | < 1 min |
 | 12 | `python scripts/etapa5_transbordo.py --etapa-5b` | Transbordo sob prazo de entrega do fornecedor (0 a 3 dias) | `tbr_*`, `fig_tbr_*` | ~11 min |
+| 13 | `python scripts/etapa6_sad_apoio.py` | Arquivo de apoio da aba de Operação do SAD (alvos de reposição por nível e prazo); confere o motor contra a Etapa 5B | `dados/sad_operacao.npz` (~25 MB) | ~3,5 min |
 
 Observações:
 
@@ -128,22 +129,38 @@ Observações:
 
 ## Sistema de apoio à decisão (SAD)
 
-Aplicação em Streamlit que traduz os resultados em recomendação operacional:
-nível de serviço recomendado pela fórmula τ* = c_r / (c_r + θ·c_h),
-indicadores esperados, curva de compromisso entre perda e falta e
-recomendação sobre o transbordo (compensa ou não, e por qual margem).
+Aplicação em Streamlit que traduz os resultados em recomendação operacional.
+Os parâmetros (custos, θ, prazos) ficam na barra lateral; há duas abas:
+
+- **Operação** — a tela do dia: escolhidas a loja e a data (período de teste,
+  26/01 a 24/04/2016), uma linha por item com estoque disponível, demanda
+  prevista, alvo de reposição (quantil no nível de serviço), quantidade a
+  pedir ao fornecedor e situação (normal / excesso / risco de ruptura), além
+  dos transbordos sugeridos entre lojas. Para demonstração, mostra também a
+  demanda real do dia e o desvio. Os estoques são os da simulação da Etapa 5B
+  (combinação), reproduzida dia a dia no cenário escolhido.
+- **Calibração** — nível de serviço recomendado pela fórmula
+  τ* = c_r / (c_r + θ·c_h), indicadores esperados, curva de compromisso entre
+  perda e falta e recomendação sobre o transbordo (compensa ou não, e por qual
+  margem). O nível definido aqui é o usado na aba de Operação, e a Operação só
+  sugere transbordos quando esta aba conclui que compensam.
 
 ```bash
 streamlit run sad.py
 ```
 
-O aplicativo abre no navegador. Ele **não refaz simulação**: lê a tabela
-`resultados/tabelas/tbr_resultados_completos.csv`, que já está no repositório
-— por isso funciona sem baixar os dados do M5. Valores de θ entre os simulados
-(0,05 a 0,20) são interpolados; fora dessa faixa, o aplicativo avisa e mostra
-só a fórmula.
+O aplicativo abre no navegador. A aba **Calibração não refaz simulação**: lê a
+tabela `resultados/tabelas/tbr_resultados_completos.csv`, que já está no
+repositório — por isso funciona sem baixar os dados do M5. Valores de θ entre
+os simulados (0,05 a 0,20) são interpolados; fora dessa faixa, o aplicativo
+avisa e mostra só a fórmula. A aba **Operação** precisa do arquivo
+`dados/sad_operacao.npz` (passo 13 da tabela acima), que exige os dados do M5;
+sem ele, a aba avisa e a Calibração continua funcionando.
 
-![Captura de tela do SAD](resultados/figuras/sad_captura.png)
+![Captura de tela do SAD — aba de Operação](resultados/figuras/sad_captura_operacao.png)
+
+*Captura com c_r = 4, c_h = 1, θ = 0,10, c_t = 0,05, L_f = 1, L_t = 1; loja
+CA_3 em 15/03/2016.*
 
 ---
 
@@ -168,7 +185,7 @@ só a fórmula.
 | 3 | Modelagem preditiva probabilística | Implementada¹ |
 | 4 | Simulação estocástica de estoque perecível | Implementada |
 | 5 | Transbordo lateral e regras de PCP | Implementada |
-| 6 | Validação e sistema de apoio à decisão | Implementada (SAD básico) |
+| 6 | Validação e sistema de apoio à decisão | Implementada (SAD básico: Operação e Calibração) |
 
 ¹ Holt-Winters, XGBoost e a combinação simples. O SARIMA, previsto no plano
 original, não foi implementado.

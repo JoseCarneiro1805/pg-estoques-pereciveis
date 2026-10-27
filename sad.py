@@ -226,7 +226,7 @@ with aba_op:
                 "Item": ap["itens"], "Estoque disponível": disp, "A caminho": caminho,
                 "Demanda prevista": ap["previsao"][:, j, t].astype(float), col_alvo: alvo,
                 "Pedir ao fornecedor": pedido, "Situação": situacao,
-                "Demanda real": real, "Desvio (real − estoque do dia)": real - estoque,
+                "Demanda real": real, "Desvio": real - estoque,
                 "_ordem": np.select([ruptura, excesso], [0, 1], 2)})[ativa]
             if lf == 0:
                 tab = tab.drop(columns="A caminho")
@@ -274,8 +274,8 @@ with aba_op:
                 "quantil da demanda do dia (chance de falta maior que a tolerada"
                 + ("; com L_f = 0 não ocorre, porque a entrega chega antes da abertura" if lf == 0
                    else "") + "). **Excesso**: estoque (com o que está a caminho) pelo menos "
-                "1 unidade acima do alvo; nada a pedir. Desvio: positivo = faltou, negativo = "
-                "sobrou. Unidades fracionárias vêm da perda proporcional θ.")
+                "1 unidade acima do alvo; nada a pedir. Desvio = demanda real − estoque do dia "
+                "(o recomendado na prateleira): positivo = faltou, negativo = sobrou. Unidades fracionárias vêm da perda proporcional θ.")
 
             # --- Transbordos ---
             st.subheader("Transbordos sugeridos")
